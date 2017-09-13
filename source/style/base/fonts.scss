@@ -1,8 +1,27 @@
-/* Пример
 @font-face {
-	font-family: "DinRegular";
-	src: url("../fonts/DINPro-Regular.otf") format("opentype");
+	font-family: "GothaPro-Bold";
+	src: url("../fonts/GothaProBol.otf") format("opentype");
 	font-style: normal;
 	font-weight: normal;
 }
-*/
+
+@font-face {
+	font-family: "GothaPro-Light";
+	src: url("../fonts/GothaProLig.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothaPro-Medium";
+	src: url("../fonts/GothaProMed.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothaPro-Regular";
+	src: url("../fonts/GothaProReg.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
