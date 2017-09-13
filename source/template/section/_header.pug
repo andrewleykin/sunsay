@@ -1,0 +1,21 @@
+header.header
+	.header__top
+		.header__logo
+			img.header__img(src="app/img/logo.png" alt="logo")
+		.header__nav
+			nav.menu
+				ul.menu__list
+					each val in [ 'О компании', 'Каталог отопления', 'Доставка и оплата','Сотрудничество' ]
+						li.menu__item
+							a.menu__link(href="#")= val
+		.header__phone.phone
+			a.phone__link(href="tel:+78002220102") 8 800 222 01 02
+	.header__bottom
+		.header__basket.basket
+			i.fa.fa-shopping-cart
+			span.basket__text Корзина
+			span.basket__count [5]
+		.header__call.call
+			a.call__link(href="#")
+				i.fa.fa-phone
+				| Заказать звонок

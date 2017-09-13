@@ -1,9 +1,17 @@
-extends ../_template
+extends ../_main
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Главная'
   - var url_js = "app/js/app.js"
   - var url_css = "app/css/app.css"
 
 block content
-  include ../common/_greating
+  // Начало секции header
+  include ../common/index/_header
+  // Конец секции header
+  // Начало секции catalog
+  include ../section/_catalog
+  // Конец секции catalog
+  // Начало секции footer
+  include ../section/_footer
+  // Конец секции footer

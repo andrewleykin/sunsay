@@ -19,4 +19,16 @@
 // Компоненты
 
 
-@import 'common/greating';
+// Секции
+
+/* Стили секции header */
+@import 'section/header';
+/* Конец стилей header */
+
+/* Стили секции footer */
+@import 'section/footer';
+/* Конец стилей footer */
+
+/* Стили секции catalog */
+@import 'section/catalog';
+/* Конец стилей catalog */

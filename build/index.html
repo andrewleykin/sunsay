@@ -2,10 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home page</title>
-    <meta content="" name="author">
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Главная</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="app/css/foundation.css">
@@ -15,9 +12,110 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="greating">
-      <div class="greating_text wow bounceIn">Hello! I'm your training builder.</div>
-      <div class="greating_picture"></div>
+    <!-- Начало секции header-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__logo"><img class="header__img" src="app/img/logo.png" alt="logo"></div>
+        <div class="header__nav">
+          <nav class="menu menu--main">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Каталог отопления</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__phone phone phone--main"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__basket basket basket--main"><i class="fa fa-shopping-cart"></i><span class="basket__text">Корзина</span><span class="basket__count">[5]</span></div>
+        <div class="header__call call"><a class="call__link" href="#"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+      </div>
+    </header>
+    <!-- Конец секции header-->
+    <!-- Начало секции catalog-->
+    <div class="catalog">
+      <div class="catalog__list">
+        <div class="catalog__item">
+          <svg class="icon icon__wheel" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#wheel"></use>
+          </svg><span class="catalog__name">Технологии SUNRAY</span>
+        </div>
+        <div class="catalog__item">
+          <svg class="icon icon__list" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#list"></use>
+          </svg><span class="catalog__name">Каталог обогревателей</span>
+        </div>
+        <div class="catalog__item">
+          <svg class="icon icon__computer" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#computer"></use>
+          </svg><span class="catalog__name">Сравнение видов отопления</span>
+        </div>
+        <div class="catalog__item">
+          <svg class="icon icon__discount" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#discount"></use>
+          </svg><span class="catalog__name">АКЦИИ!</span>
+        </div>
+      </div>
     </div>
+    <!-- Конец секции catalog-->
+    <!-- Начало секции footer-->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__block"><span class="footer__title">Выбирайте и покупайте</span>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Конвекторы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Греющие панели</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Тёплый пол</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Терморегуляторы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Потолочные обогреватели</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Профессиональный монтаж</a></li>
+          </ul>
+        </div>
+        <div class="footer__block"><span class="footer__title">Ищите нас в соцсетях</span>
+          <div class="footer__social social"></div><a class="social__link" href="#">
+            <svg class="icon icon__vk" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#vk"></use>
+            </svg></a><a class="social__link" href="#">
+            <svg class="icon icon__inst" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#inst"></use>
+            </svg></a><a class="social__link" href="#">
+            <svg class="icon icon__youtube" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#youtube"></use>
+            </svg></a><a class="social__link" href="#">
+            <svg class="icon icon__fb" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#fb"></use>
+            </svg></a><a class="social__link" href="#">
+            <svg class="icon icon__od" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#od"></use>
+            </svg></a>
+          <div class="footer__subscribe subscribe">
+            <button class="subscribe__btn" type="button"><i class="fa fa-envelope"></i>Подписаться на акции</button>
+          </div>
+        </div>
+        <div class="footer__block"><span class="footer__title">Свяжитесь с нами</span>
+          <div class="footer__contacts contacts"><a class="contacts__link" href="#"><i class="fa fa-map-o"></i>Контакты</a><a class="contacts__link" href="#"><i class="fa fa-comments"></i>Задать вопрос</a></div>
+        </div>
+        <div class="footer__block"><span class="footer__title">Информация</span>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">О Компании</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Производство</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Дисконтная программа</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Доставка</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Способы оплаты</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гарантия</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Стать дилером</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__middle"><span class="footer__offical">Официальный сайт производителя “SUNRAY”</span></div>
+      <div class="footer__bottom">
+        <div class="footer__logo"><img class="footer__img" src="app/img/logo.png" alt="logo"><span class="footer__descr">отопление будущего</span></div>
+        <div class="footer__privacy privacy"><a class="privacy__link" href="#">Политика конфиденциальности</a></div>
+        <p class="footer__law">©2014-2017.<br>MySunray.ru - интернет магазин обогревателей.<br>Все права защищены.</p>
+      </div>
+    </footer>
+    <!-- Конец секции footer-->
   </body>
 </html>

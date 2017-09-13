@@ -1,0 +1,46 @@
+footer.footer
+	.footer__top
+		.footer__block
+			span.footer__title Выбирайте и покупайте
+			ul.footer__list
+				each val in [ 'Конвекторы', 'Греющие панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
+					li.footer__item
+						a.footer__link(href="#")= val
+		.footer__block
+			span.footer__title Ищите нас в соцсетях
+			.footer__social.social
+			each val in [ 'vk', 'inst', 'youtube', 'fb', 'od']
+				a.social__link(href="#")
+					+icon('' + val)
+			.footer__subscribe.subscribe
+				button.subscribe__btn(type="button")
+					i.fa.fa-envelope
+					| Подписаться на акции
+		.footer__block
+			span.footer__title Свяжитесь с нами
+			.footer__contacts.contacts
+				a.contacts__link(href="#")
+					i.fa.fa-map-o
+					| Контакты
+				a.contacts__link(href="#")
+					i.fa.fa-comments
+					| Задать вопрос
+		.footer__block
+			span.footer__title Информация
+			ul.footer__list
+				each val in [ 'О Компании', 'Производство', 'Дисконтная программа', 'Доставка', 'Способы оплаты', 'Гарантия', 'Стать дилером']
+					li.footer__item
+						a.footer__link(href="#")= val
+	.footer__middle
+		span.footer__offical Официальный сайт производителя “SUNRAY”
+	.footer__bottom
+		.footer__logo
+			img.footer__img(src="app/img/logo.png" alt="logo")
+			span.footer__descr отопление будущего
+		.footer__privacy.privacy
+			a.privacy__link(href="#") Политика конфиденциальности
+		p.footer__law ©2014-2017.
+			br
+			| MySunray.ru - интернет магазин обогревателей.
+			br
+			| Все права защищены.

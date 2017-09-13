@@ -1,0 +1,10 @@
+- var icons = ['wheel', 'list', 'computer', 'discount'];
+- var names = ['Технологии SUNRAY', 'Каталог обогревателей', 'Сравнение видов отопления', 'АКЦИИ!']
+
+.catalog
+	.catalog__list
+		- for (i=0;i<icons.length;i++) {
+				.catalog__item
+					+icon('' + icons[i])
+					span.catalog__name= names[i]
+		- }
