@@ -29,6 +29,10 @@
 @import 'section/footer';
 /* Конец стилей footer */
 
+/* Стили секции promo */
+@import 'section/promo';
+/* Конец стилей promo */
+
 /* Стили секции catalog */
 @import 'section/catalog';
 /* Конец стилей catalog */
@@ -71,3 +75,7 @@
 /* Стили блока privacy */
 @import 'common/privacy';
 /* Конец стилей privacy */
+
+/* Стили блока breadcrumbs */
+@import 'common/breadcrumbs';
+/* Конец стилей breadcrumbs */

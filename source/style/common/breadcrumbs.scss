@@ -1,0 +1,30 @@
+.breadcrumbs__list {
+	display: flex;
+}
+
+.breadcrumbs__item {
+	&:last-child {
+		.breadcrumbs__link:after {
+			display: none;
+			padding-right: 0;
+		}
+	}
+}
+
+.breadcrumbs__link {
+	display: flex;
+	align-items: center;
+	padding-right: 10px;
+	&:after {
+		content: "";
+		display: block;
+		width: 6px;
+		height: 9px;
+		background: url(../img/arrow-right--small.png) center center no-repeat;
+		margin-left: 10px;
+	}
+}
+
+.breadcrumbs__link--active {
+	cursor: default;
+}

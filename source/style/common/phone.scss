@@ -1,6 +1,9 @@
 .phone__link {
 	font-family: $mediumFont;
 	font-size: 28px;
+	@media (max-width: 1200px) {
+		font-size: 20px;
+	}
 }
 
 .phone--main {

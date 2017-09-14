@@ -1,0 +1,117 @@
+.promo {
+	margin-bottom: 90px;
+}
+
+.promo__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo__item {
+	width: 25%;
+	margin-right: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	cursor: pointer;
+	.icon {
+		width: 57px;
+		height: 57px;
+		fill: $accentColor;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 2;
+		@extend .trs;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	&:before {
+		content : "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background: rgba(255,255,255,.5);
+		@extend .trs;
+	}
+	&:hover {
+		.icon {
+			fill: white;
+		}
+		.promo__name {
+			color: white;
+		}
+		.promo__more {
+			opacity: 1;
+		}
+		&:before {
+			background-image: linear-gradient(to bottom, #fc0c19, #ed0a63);
+			opacity: 0.75;
+		}
+	}
+}
+
+.promo__name {
+	font-size: 24px;
+	font-family: $boldFont;
+	display: block;
+	margin-bottom: 105px;
+	position: relative;
+	z-index: 2;
+	@extend .trs;
+}
+
+.promo__more {
+	font-size: 18px;
+	font-family: $boldFont;
+	color: white;
+	display: inline-flex;
+	align-items: center;
+	margin-top: auto;
+	opacity: 0;
+	position: relative;
+	z-index: 2;
+	@extend .trs;
+	transition-delay: .2s;
+	&:after {
+		content: "";
+		display: block;
+		margin-left: 15px;
+		width: 73px;
+		height: 10px;
+		background: url(../img/arrow-right.png) center center no-repeat;
+		background-size: cover;
+		@media (max-width: 1200px) {
+			width: 40px;
+			height: 5px;
+		}
+	}
+}
+
+// background
+.promo__item--1 {
+	background: url(../img/promo/promo-1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.promo__item--2 {
+	background: url(../img/promo/promo-2.jpg) center center no-repeat;
+	background-size: cover;
+}
+.promo__item--3 {
+	background: url(../img/promo/promo-3.jpg) center center no-repeat;
+	background-size: cover;
+}
+.promo__item--4 {
+	background: url(../img/promo/promo-4.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.index-promo {
+	.promo {
+		margin-top: -100px;
+	}
+}

@@ -1,0 +1,14 @@
+extends ../_template
+
+block variables
+  - var title = 'Каталог'
+  - var url_js = "app/js/app.js"
+  - var url_css = "app/css/app.css"
+
+block content
+  // Начало секции catalog
+  include ../section/_catalog
+  // Конец секции catalog
+  // Начало секции promo
+  include ../section/_promo
+  // Конец секции promo

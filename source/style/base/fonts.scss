@@ -1,27 +1,27 @@
 @font-face {
-	font-family: "GothaPro-Bold";
-	src: url("../fonts/GothaProBol.otf") format("opentype");
+	font-family: "GothamPro-Bold";
+	src: url("../fonts/GothamPro-Bold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "GothaPro-Light";
-	src: url("../fonts/GothaProLig.otf") format("opentype");
+	font-family: "GothamPro-Light";
+	src: url("../fonts/GothamPro-Light.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "GothaPro-Medium";
-	src: url("../fonts/GothaProMed.otf") format("opentype");
+	font-family: "GothamPro-Medium";
+	src: url("../fonts/GothamPro-Medium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "GothaPro-Regular";
-	src: url("../fonts/GothaProReg.otf") format("opentype");
+	font-family: "GothamPro-Regular";
+	src: url("../fonts/GothamPro.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -29,7 +29,7 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format('embedded-opentype'), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format('woff2'), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format('woff'), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format('truetype'), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format('svg');
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format('embedded-truetype'), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format('woff2'), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format('woff'), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format('truetype'), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,13 +1,26 @@
-- var index = [1,2,3,4]
-- var icons = ['wheel', 'list', 'computer', 'discount'];
-- var names = ['Технологии SUNRAY', 'Каталог обогревателей', 'Сравнение видов отопления', 'АКЦИИ!']
+- var index = [1,2,3,4,5,6]
+- var names = ['Конвекторы и греющие панели', 'Монтаж', 'Дополнения', 'Потолочные обогреватели', 'Терморегуляторы', 'Тёплый пол']
 
 .catalog
 	.container
+		.catalog__breadcrumbs
+			.breadcrumbs
+				.breadcrumbs__list
+					.breadcrumbs__item
+						a(href="#").breadcrumbs__link Главная
+					.breadcrumbs__item
+						a(href="#").breadcrumbs__link.breadcrumbs__link--active Каталог отопления
 		.catalog__list
-			- for (i=0;i<icons.length;i++) {
-					.catalog__item(class="catalog__item--" + index[i])
-						+icon('' + icons[i])
+			- for (i=0;i<names.length;i++) {
+				- if (i>2) {
+					a.catalog__item(class="catalog__item--dark catalog__item--" + index[i] href="#")
 						span.catalog__name= names[i]
-						a.catalog__more(href="#") Подробнее
+						p.catalog__descr Профессиональный установка отопления собственными монтажниками.
+						span.catalog__more Перейти в раздел
+				- } else {
+					a.catalog__item(class="catalog__item--" + index[i] href="#")
+						span.catalog__name= names[i]
+						p.catalog__descr Профессиональный установка отопления собственными монтажниками.
+						span.catalog__more Перейти в раздел
+				- }
 			- }

@@ -1,0 +1,13 @@
+- var index = [1,2,3,4]
+- var icons = ['wheel', 'list', 'computer', 'discount'];
+- var names = ['Технологии SUNRAY', 'Каталог обогревателей', 'Сравнение видов отопления', 'АКЦИИ!']
+
+.promo
+	.container
+		.promo__list
+			- for (i=0;i<icons.length;i++) {
+					.promo__item(class="promo__item--" + index[i])
+						+icon('' + icons[i])
+						span.promo__name= names[i]
+						a.promo__more(href="#") Подробнее
+			- }

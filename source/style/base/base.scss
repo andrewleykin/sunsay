@@ -41,9 +41,12 @@ img {
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
+	@media (max-width: 1200px) {
+		padding: 0 10px;
+	}
 }
 
-/*
+
 // футер к низу
 
 body {
@@ -55,9 +58,8 @@ body {
 	flex: 1;
 }
 
-*/
 
 .slider {
-	height: 613px;
+	min-height: 613px;
 	background: blue;
 }

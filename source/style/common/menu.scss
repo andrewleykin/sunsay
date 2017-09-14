@@ -9,6 +9,9 @@
 	&:hover {
 		color: $accentColor;
 	}
+	@media (max-width: 1200px) {
+		padding: 5px 12px;
+	}
 }
 
 .menu--main {
