@@ -50,6 +50,9 @@
 		}
 		.promo__more {
 			opacity: 1;
+			&:after {
+				animation: fadeIn .5s linear;
+			}
 		}
 		&:before {
 			background-image: linear-gradient(to bottom, #fc0c19, #ed0a63);
@@ -126,5 +129,18 @@
 .index-promo {
 	.promo {
 		margin-top: -100px;
+	}
+}
+
+// key-frames
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(-40px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
