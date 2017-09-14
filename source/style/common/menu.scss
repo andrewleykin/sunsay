@@ -5,7 +5,6 @@
 .menu__link {
 	display: block;
 	padding: 10px 19px;
-	font-family: $mediumFont;
 	@extend .trs;
 	&:hover {
 		color: $accentColor;
