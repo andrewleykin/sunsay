@@ -1,0 +1,36 @@
+.basket {
+	position: relative;
+	z-index: 2;
+	font-size: 16px;
+	font-family: $mediumFont;
+	display: flex;
+	padding: 0 15px;
+	.fa {
+		color: $accentColor;
+		margin-right: 9px;
+	}
+}
+
+.basket__text {
+	display: block;
+	margin-right: 8px;
+}
+
+.basket__count {
+	color: $accentColor;
+}
+
+.basket--main {
+	.basket__text {
+		color: white;
+		padding-bottom: 3px;
+		border-bottom: 2px dotted white;
+		@extend .trs;
+	}
+	&:hover {
+		text-decoration: none;
+		.basket__text {
+			border-bottom: 2px dotted transparent;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.main-slider {
+	overflow: hidden;
+}
+
+.main-slider__list {
+	position: relative;
+	height: 701px;
+}
+
+.main-slider__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main-slider__text {
+	z-index: 10;
+	position: relative;
+}

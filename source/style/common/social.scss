@@ -1,0 +1,15 @@
+.social {
+	display: inline-flex;
+}
+
+.social__link {
+	display: block;
+	margin-right: 10px;
+	.icon {
+		width: 27px;
+		height: 27px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}

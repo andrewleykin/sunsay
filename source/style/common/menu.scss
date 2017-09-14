@@ -1,0 +1,21 @@
+.menu__list {
+	display: flex;
+}
+
+.menu__link {
+	display: block;
+	padding: 10px 19px;
+	@extend .trs;
+	&:hover {
+		color: $accentColor;
+	}
+}
+
+.menu--main {
+	.menu__link {
+		color: white;
+		&:hover {
+			color: $accentColor;
+		}
+	}
+}

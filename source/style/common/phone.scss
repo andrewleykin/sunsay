@@ -1,0 +1,14 @@
+.phone__link {
+	font-family: $mediumFont;
+	font-size: 28px;
+}
+
+.phone--main {
+	.phone__link {
+		color: white;
+		@extend .trs;
+		&:hover {
+			color: $accentColor;
+		}
+	}
+}

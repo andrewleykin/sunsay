@@ -1,0 +1,8 @@
+.privacy__link {
+	padding-bottom: 2px;
+	border-bottom: 2px dotted $accentColor;
+	@extend .trs;
+	&:hover {
+		border-bottom: 2px dotted transparent;
+	}
+}
