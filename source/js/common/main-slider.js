@@ -7,7 +7,7 @@
 		dot = $('.main-slider__dot'),
 		prev = $('.main-slider__control--prev'),
 		next = $('.main-slider__control--next'),
-		duration = 2000,
+		duration = 2400,
 		dotAnimate = 'main-slider__dot--animate',
 		animateDot = dot.filter('.' + dotAnimate),
 		index = 0;
