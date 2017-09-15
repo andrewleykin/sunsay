@@ -35,9 +35,6 @@
 	}
 	&:last-child {
 		height: 480px;
-		.catalog__descr {
-			margin-bottom: 310px;
-		}
 	}
 	&:before {
 		content : "";
@@ -79,6 +76,7 @@
 	position: relative;
 	z-index: 2;
 	color: white;
+	@extend .trs;
 	@media (max-width: 960px) {
 		font-size: 26px;
 		width: 100%;
@@ -126,13 +124,9 @@
 	.catalog__name {
 		color: black;
 	}
-	.catalog__descr {
-		color: black;
-	}
-	.catalog__more {
-		color: black;
-		&:after {
-			background: url(../img/arrow-right--black.png) center center no-repeat;
+	&:hover {
+		.catalog__name {
+			color: white;
 		}
 	}
 }
