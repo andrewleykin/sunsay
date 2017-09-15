@@ -1,7 +1,7 @@
 .call__link {
-	color: $accentColor;
+	color: white;
 	font-family: $mediumFont;
-	font-size: 16px;
+	font-size: 14px;
 	padding-bottom: 2px;
 	border-bottom: 2px dotted $accentColor;
 	@extend .trs;
@@ -10,5 +10,6 @@
 	}
 	&:hover {
 		border-bottom: 2px dotted transparent;
+		color: $accentColor;
 	}
 }

@@ -13,30 +13,77 @@
   </head>
   <body>
     <!-- Начало секции header-->
-    <header class="header header--main">
+    <header class="header">
       <div class="container">
         <div class="header__top">
-          <div class="header__logo"><a class="header__link" href="/"><img class="header__img" src="app/img/logo.png" alt="logo"></a></div>
+          <div class="header__logo"><img class="header__img" src="app/img/logo.png" alt="logo"></div>
           <div class="header__nav">
-            <nav class="menu menu--main">
+            <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Каталог отопления</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
               </ul>
             </nav>
           </div>
-          <div class="header__phone phone phone--main"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
-        </div>
-        <div class="header__bottom">
-          <div class="header__basket"><a class="basket basket--main" href="#"><i class="fa fa-shopping-cart"></i><span class="basket__text">Корзина</span><span class="basket__count">[5]</span></a></div>
-          <div class="header__call call call--main"><a class="call__link" href="#"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+          <div class="header__basket"><a class="basket"><i class="fa fa-shopping-cart"></i><span class="basket__text">Корзина</span><span class="basket__count">[5]</span></a></div>
+          <div class="header__phone">
+            <div class="phone"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
+            <div class="header__call call"><a class="call__link" href="#"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+          </div>
         </div>
       </div>
     </header>
     <!-- Конец секции header-->
-    <div class="slider"></div>
+    <!-- Начало секции main-slider-->
+    <div class="main-slider">
+      <div class="main-slider__display">
+        <div class="main-slider__list">
+          <div class="main-slider__item main-slider__item--1 main-slider__item--active">
+            <div class="container">
+              <div class="main-slider__text"><span class="main-slider__text--light">Отопление будущего</span><span class="main-slider__text--black">— УЖЕ ЗДЕСЬ</span></div><a class="main-slider__link" href="#"><span class="main-slider__link--helper"></span><span class="main-slider__link--text">Перейти в каталог</span><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="main-slider__item main-slider__item--2">
+            <div class="container">
+              <div class="main-slider__text"><span class="main-slider__text--light">До сих пор считаете,</span><span class="main-slider__text--black">что газ — это выгодно?</span></div><a class="main-slider__link" href="#"><span class="main-slider__link--helper"></span><span class="main-slider__link--text">Сравнить стоимость отопления</span><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="main-slider__item main-slider__item--3">
+            <div class="container">
+              <div class="main-slider__text"><span class="main-slider__text--black">ответьте на 6 вопросов и получите:</span></div>
+              <ul class="main-slider__roll">
+                <li class="main-slider__roll-item">Стоимость обогревателя для Вас</li>
+                <li class="main-slider__roll-item">Рассчёт расходов на электричество в месяц</li>
+                <li class="main-slider__roll-item">Вашу персональную скидку</li>
+              </ul><a class="main-slider__link main-slider__link--fill" href="#">Узнать стоимость<i class="fa fa-arrow-right"></i></a>
+              <div class="main-slider__ball"><span>Расход</span><span class="main-slider__ball-text">151</span><span>кВт/мес</span></div>
+              <div class="main-slider__ball main-slider__ball--big"><span>Цена</span><span class="main-slider__ball-text">7000</span><span>рублей</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-slider__controls">
+          <div class="main-slider__wrap">
+            <div class="main-slider__control main-slider__control--prev">
+              <svg class="icon icon__right-arrow" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#right-arrow"></use>
+              </svg>
+            </div>
+            <div class="main-slider__control main-slider__control--next">
+              <svg class="icon icon__right-arrow" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#right-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__dots">
+          <div class="main-slider__wrap"><span class="main-slider__dot main-slider__dot--animate"></span><span class="main-slider__dot"></span><span class="main-slider__dot"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец секции main-slider-->
     <div class="index-promo">
       <!-- Начало секции promo-->
       <div class="promo">

@@ -1,0 +1,51 @@
+.main-slider
+	.main-slider__display
+		.main-slider__list
+			.main-slider__item.main-slider__item--1.main-slider__item--active
+				.container
+					.main-slider__text
+						span.main-slider__text--light Отопление будущего
+						span.main-slider__text--black — УЖЕ ЗДЕСЬ
+					a.main-slider__link(href="#")
+						span.main-slider__link--helper
+						span.main-slider__link--text Перейти в каталог
+						i.fa.fa-arrow-right
+			.main-slider__item.main-slider__item--2
+				.container
+					.main-slider__text
+						span.main-slider__text--light До сих пор считаете,
+						span.main-slider__text--black что газ — это выгодно?
+					a.main-slider__link(href="#")
+						span.main-slider__link--helper
+						span.main-slider__link--text Сравнить стоимость отопления
+						i.fa.fa-arrow-right
+			.main-slider__item.main-slider__item--3
+				.container
+					.main-slider__text
+						span.main-slider__text--black ответьте на 6 вопросов и получите:
+					ul.main-slider__roll
+						li.main-slider__roll-item Стоимость обогревателя для Вас
+						li.main-slider__roll-item Рассчёт расходов на электричество в месяц
+						li.main-slider__roll-item Вашу персональную скидку
+					a.main-slider__link.main-slider__link--fill(href="#") Узнать стоимость
+						i.fa.fa-arrow-right
+					.main-slider__ball
+						span Расход
+						span.main-slider__ball-text 151
+						span кВт/мес
+					.main-slider__ball.main-slider__ball--big
+						span Цена
+						span.main-slider__ball-text 7000
+						span рублей
+	.container
+		.main-slider__controls
+			.main-slider__wrap
+				.main-slider__control.main-slider__control--prev
+					+icon('right-arrow')
+				.main-slider__control.main-slider__control--next
+					+icon('right-arrow')
+		.main-slider__dots
+			.main-slider__wrap
+				span.main-slider__dot.main-slider__dot--animate
+				span.main-slider__dot
+				span.main-slider__dot

@@ -1,6 +1,11 @@
 .phone__link {
 	font-family: $mediumFont;
-	font-size: 28px;
+	font-size: 24px;
+	color: white;
+	@extend .trs;
+	&:hover {
+		color: $accentColor;
+	}
 	@media (max-width: 1200px) {
 		font-size: 20px;
 	}

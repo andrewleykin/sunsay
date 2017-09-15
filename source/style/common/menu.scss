@@ -5,20 +5,13 @@
 .menu__link {
 	display: block;
 	padding: 10px 19px;
+	color: white;
 	@extend .trs;
 	&:hover {
+		font-family: $mediumFont;
 		color: $accentColor;
 	}
 	@media (max-width: 1200px) {
 		padding: 5px 12px;
-	}
-}
-
-.menu--main {
-	.menu__link {
-		color: white;
-		&:hover {
-			color: $accentColor;
-		}
 	}
 }

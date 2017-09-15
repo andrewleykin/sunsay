@@ -20,11 +20,19 @@
 }
 
 @font-face {
+	font-family: "GothamPro-Black";
+	src: url("../fonts/GothamPro-Black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
 	font-family: "GothamPro-Regular";
 	src: url("../fonts/GothamPro.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
+
 
 @font-face {
   font-family: 'FontAwesome';
