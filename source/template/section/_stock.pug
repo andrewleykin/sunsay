@@ -1,0 +1,26 @@
+.stock
+	.stock__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Акции']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.container
+		.stock__wrap
+			.main-slider__text.stock__text
+				span.main-slider__text--black ответьте на 6 вопросов и получите:
+			ul.main-slider__roll.stoke__roll
+				li.main-slider__roll-item Стоимость обогревателя для Вас
+				li.main-slider__roll-item Рассчёт расходов на электричество в месяц
+				li.main-slider__roll-item Вашу персональную скидку
+			a.main-slider__link.main-slider__link--fill(href="#") Узнать стоимость
+				i.fa.fa-arrow-right
+			.main-slider__ball
+				span Расход
+				span.main-slider__ball-text 151
+				span кВт/мес
+			.main-slider__ball.main-slider__ball--big
+				span Цена
+				span.main-slider__ball-text 7000
+				span рублей
