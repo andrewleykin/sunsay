@@ -45,9 +45,17 @@
 @import 'section/compare';
 /* Конец стилей compare */
 
+/* Стили секции term */
+@import 'section/term';
+/* Конец стилей term */
+
 /* Стили секции stock */
 @import 'section/stock';
 /* Конец стилей stock */
+
+/* Стили секции contacts */
+@import 'section/contacts';
+/* Конец стилей contacts */
 
 
 // Блоки
@@ -79,10 +87,6 @@
 /* Стили блока subscribe */
 @import 'common/subscribe';
 /* Конец стилей subscribe */
-
-/* Стили блока contacts */
-@import 'common/contacts';
-/* Конец стилей contacts */
 
 /* Стили блока privacy */
 @import 'common/privacy';

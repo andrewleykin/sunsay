@@ -1,0 +1,59 @@
+.term {
+	padding-top: 145px;
+	background: url(../img/compare/compare__more.jpg) center center no-repeat;
+	background-size: cover;
+	height: 1100px;
+	@media (max-width: 960px) {
+		padding-top: 115px;
+		height: 1000px;
+	}
+}
+
+.term__title {
+	color: $accentColor;
+	font-size: 105px;
+	text-transform: uppercase;
+	font-family: $boldFont;
+	text-shadow: 0px 2px 10px $accentColor;
+	margin-bottom: 55px;
+	@media (max-width: 960px) {
+		font-size: 90px;
+		margin-bottom: 40px;
+	}
+}
+
+.term__subtitle {
+	font-size: 24px;
+	font-family: $boldFont;
+	display: block;
+	margin-bottom: 45px;
+	@media (max-width: 960px) {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+.term__descr {
+	font-size: 18px;
+	@media (max-width: 960px) {
+		font-size: 16px;
+	}
+}
+
+.term__catalog {
+	text-align: center;
+	margin-bottom: 65px;
+	@media (max-width: 960px) {
+		margin-bottom: 45px;
+	}
+}
+
+.term__text {
+	font-size: 36px;
+	font-family: $blackFont;
+	margin-bottom: 60px;
+	display: block;
+}
+.term__link {
+	@extend .company__link;
+}

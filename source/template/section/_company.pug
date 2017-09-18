@@ -29,9 +29,17 @@
 				h3.certificate__title Сертификаты и патенты
 				.certificate__block
 					.certificate__img
-						img(src="app/img/company/certificate__1.png")
+						.certificate__pic(data-remodal-target="certificate-1")
+							.remodal(data-remodal-id="certificate-1")
+								button.remodal-close(data-remodal-action="close")
+								img(src="app/img/company/certificate__1.jpg")
+							img(src="app/img/company/certificate__1.jpg")
 						+icon('zoom')
 					.certificate__img
-						img(src="app/img/company/certificate__2.png")
+						.certificate__pic(data-remodal-target="certificate-2")
+							.remodal(data-remodal-id="certificate-2")
+								button.remodal-close(data-remodal-action="close")
+								img(src="app/img/company/certificate__2.jpg")
+							img(src="app/img/company/certificate__2.jpg")
 						+icon('zoom')
 			a.company__link(href="#") Перейти в каталог

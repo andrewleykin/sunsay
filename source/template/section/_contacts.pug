@@ -1,0 +1,47 @@
+.contacts
+	.contacts__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Контакты']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.contacts__map
+		iframe(src='//mapkit.io/embed/PkvXoi', frameborder='0', height='400', width='100%')
+	.contacts__wrap
+		.container
+			.contacts__wrapper
+				.contacts__col
+					.contacts__row
+						a.contacts__phone(href="tel:+78002220102") 8 800 222 01 02
+						button.contacts__order Заказать звонок
+					p.contacts__text Уважаемые клиенты и партнеры!
+					p.contacts__text Мы стремимся к тому, чтобы наш магазин постоянно развивался и прикладываем к этому все усилия. Но мы бы не смогли успешно делать это без вашего непосредственного участия. Поэтому для нас важно каждое ваше мнение или идея.
+					p.contacts__text Если у вас есть какие-либо предложения о сотрудничестве или замечания по поводу работы магазина, или вы просто хотели бы оставить обратную связь – напишите нам.
+					button.conctacts__mail Напишите нам
+						.contacts__mail--helper
+				.contacts__col
+					.contacts__row
+						span Мы в социальных сетях:
+						ul.contacts__list
+							each val in ['vk--big', 'inst--big', 'youtube--big', 'fb--big', 'od--big']
+								li.contacts__item
+									a.contacts__link(href="#" target="_blank")
+										+icon('' + val)
+					p.contacts__text.contacts__text--bold Интернет Магазин “SUNRAY”
+						br
+						| ООО “SUNRAY” ОГРН: 74564200795
+					p.contacts__text
+						span.contacts__text--light Юридический адрес:
+						| 454074 г. Челябинск ул. Автоматики, 3
+					p.contacts__text
+						span.contacts__text--light Фактческий адрес:
+						| 454074 г. Челябинск ул. Автоматики, 3
+						br
+						| Время работы: с 9:00 до 19:00
+					p.contacts__text
+						span.contacts__text--light Телефон:
+						a.contacts__text--link(href="tel:+78002220102") 8 800 2999 99 99
+					p.contacts__text
+						span.contacts__text--light E-mail:
+						| SUNRAY.COMPANY@YANDEX.RU
