@@ -112,6 +112,7 @@
 	.diagram__img {
 		// animation: gas 1s linear forwards;
 		background-image: linear-gradient(to bottom, #1de5f1, #2c4a9f);
+		box-shadow: -5px 5px 15px -5px #2c4a9f;
 	}
 }
 
@@ -119,6 +120,7 @@
 	.diagram__img {
 		// animation: boiler 1s linear .1s forwards;
 		background-image: linear-gradient(to bottom, #fad421, #ef3724);
+		box-shadow: -5px 5px 15px -5px #ef3724;
 	}
 }
 
@@ -126,6 +128,7 @@
 	.diagram__img {
 		// animation: pelet 1s linear .2s forwards;
 		background-image: linear-gradient(to bottom, #dee326, #1f9e40);
+		box-shadow: -5px 5px 15px -5px #1f9e40;
 	}
 }
 
@@ -133,5 +136,6 @@
 	.diagram__img {
 		// animation: sunray 1s linear .3s forwards;
 		background-image: linear-gradient(to bottom, #fd3642, #ed0a62);
+		box-shadow: -5px 5px 15px -5px #ed0a62;
 	}
 }
