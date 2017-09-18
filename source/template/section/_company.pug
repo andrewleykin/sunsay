@@ -1,0 +1,37 @@
+.company
+	.company__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'О компании']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.company__banner
+		.container
+			h1.company__title О компании
+	.company__content
+		.container
+			p.company__text Мы твёрдо уверены, что будущее за зелёной, возобновляемой энергией, так как ископаемые запасы рано или поздно истощатся.
+			.company__mission
+				+icon('trophy')
+				p.company__text.company__text--medium Миссия компании SUNRAY — 
+					br
+					| Используя инновационные технологии, cогревать дома, и помогать людям экономить деньги.
+			p.company__text Мы выбрали самый прямой путь к реализации своей миссии —  запустили собственное производство энергоэффективных обогревателей и отопительной техники высочайшего качества.
+			img.company__img(src="app/img/company/company__1.jpg" alt="SUNRAY")
+			h2.company__title.company__title--dark Важна каждая деталь
+			p.company__text Чтобы быть уверенными на 100% в продукте, мы доходчиво контролируем процесс производства начиная от качества металла для корпуса, заканчивая проверкой обогревателей на стенде после сборки и подтверждение печатью ОТК.
+			img.company__img(src="app/img/company/company__2.jpg" alt="SUNRAY")
+			h2.company__title.company__title--dark Дизайн
+			p.company__text Сказать честно, мы очень любим красивые вещи. Именно по этому дизайн наших обогревателей для нас играет одну из решающих ролей! Будущее за красивыми вещами. Мы постоянно ведём разработку новыых моделей и коллекций! От классиики до хай-тек.
+			img.company__img(src="app/img/company/company__3.jpg" alt="SUNRAY")
+			.company__certificate.certificate
+				h3.certificate__title Сертификаты и патенты
+				.certificate__block
+					.certificate__img
+						img(src="app/img/company/certificate__1.png")
+						+icon('zoom')
+					.certificate__img
+						img(src="app/img/company/certificate__2.png")
+						+icon('zoom')
+			a.company__link(href="#") Перейти в каталог

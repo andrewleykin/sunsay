@@ -1,0 +1,55 @@
+.certificate {
+	text-align: center;
+	margin-bottom: 70px;
+	@media (max-width: 960px) {
+		margin-bottom: 50px;
+	}
+}
+
+.certificate__title {
+	@extend .company__title;
+	color: black;
+	margin-bottom: 70px;
+	@media (max-width: 960px) {
+		margin-bottom: 50px;
+	}
+}
+
+.certificate__block {
+	display: flex;
+	justify-content: center;
+}
+
+.certificate__img {
+	position: relative;
+	cursor: pointer;
+	.icon {
+		position: absolute;
+		@include center('xy');
+		width: 65px;
+		height: 65px;
+		opacity: 0;
+		@extend .trs;
+	}
+	&:first-child {
+		margin-right: 150px;
+	}
+	&:hover {
+		.icon {
+			opacity: 1;
+		}
+	}
+	@media (max-width: 960px) {
+		&:first-child {
+			margin-right: 100px;
+		}
+	}
+}
+
+.certificate__img--active {
+	position: fixed;
+	@include center('xy');
+	z-index: 9999;
+	width: 50%;
+	height: 90%;
+}

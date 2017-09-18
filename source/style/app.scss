@@ -37,6 +37,10 @@
 @import 'section/catalog';
 /* Конец стилей catalog */
 
+/* Стили секции company */
+@import 'section/company';
+/* Конец стилей company */
+
 
 // Блоки
 
@@ -79,3 +83,7 @@
 /* Стили блока breadcrumbs */
 @import 'common/breadcrumbs';
 /* Конец стилей breadcrumbs */
+
+/* Стили блока certificate */
+@import 'common/certificate';
+/* Конец стилей certificate */
