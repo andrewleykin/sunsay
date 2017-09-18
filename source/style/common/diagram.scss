@@ -1,0 +1,137 @@
+.diagram {
+	padding-bottom: 70px;
+	@media (max-width: 960px) {
+		padding-bottom: 50px;
+	}
+}
+.diagram__list {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	@media (max-width: 960px) {
+		margin-bottom: 30px
+	}
+}
+
+.diagram__item {
+	width: calc(25% - 44px);
+}
+
+.diagram__item--month {
+	width: 30%;
+	margin: 0 auto;
+	.diagram__subblock {
+		height: 350px;
+	}
+	.diagram__price {
+		font-size: 18px;
+	}
+	.diagram__name {
+		font-size: 18px;
+		font-family: $boldFont;
+		text-align: center;
+	}
+}
+
+.diagram__title {
+	display: block;
+	font-size: 24px;
+	font-family: $blackFont;
+	line-height: 1.15;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.diagram__subtitle {
+	font-size: 18px;
+	display: block;
+	margin-bottom: 65px;
+	@media (max-width: 960px) {
+		margin-bottom: 45px;
+	}
+}
+
+.diagram__block {
+	display: flex;
+}
+
+.diagram__subblock {
+	width: 25%;
+}
+
+.diagram__price {
+	font-size: 12px;
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.diagram__img {
+	margin-bottom: 15px;
+}
+
+.diagram__name {
+	font-family: $boldFont;
+	height: 0;
+}
+.diagram__name--bottom {
+	padding-top: 20px;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+.diagram__subblock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	height: 250px;
+}
+
+.diagram__img-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.diagram__descr {
+	text-align: left;
+	font-size: 18px;
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
+}
+
+
+// background
+
+.diagram__subblock--gas {
+	.diagram__img {
+		// animation: gas 1s linear forwards;
+		background-image: linear-gradient(to bottom, #1de5f1, #2c4a9f);
+	}
+}
+
+.diagram__subblock--boiler {
+	.diagram__img {
+		// animation: boiler 1s linear .1s forwards;
+		background-image: linear-gradient(to bottom, #fad421, #ef3724);
+	}
+}
+
+.diagram__subblock--pelet {
+	.diagram__img {
+		// animation: pelet 1s linear .2s forwards;
+		background-image: linear-gradient(to bottom, #dee326, #1f9e40);
+	}
+}
+
+.diagram__subblock--sunray {
+	.diagram__img {
+		// animation: sunray 1s linear .3s forwards;
+		background-image: linear-gradient(to bottom, #fd3642, #ed0a62);
+	}
+}

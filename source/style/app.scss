@@ -41,6 +41,10 @@
 @import 'section/company';
 /* Конец стилей company */
 
+/* Стили секции compare */
+@import 'section/compare';
+/* Конец стилей compare */
+
 
 // Блоки
 
@@ -87,3 +91,7 @@
 /* Стили блока certificate */
 @import 'common/certificate';
 /* Конец стилей certificate */
+
+/* Стили блока diagram */
+@import 'common/diagram';
+/* Конец стилей diagram */

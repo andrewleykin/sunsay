@@ -1,0 +1,126 @@
+.compare
+	.compare__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Сравнение видов отопления']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.compare__banner
+		.container
+			.compare__wrap
+				+icon('computer')
+				h1.compare__title Сравнение видов отопления
+	section.compare__content
+		.container
+			h2.compare__title.compare__title--big Сравнение видов отопления
+			span.compare__subtitle Для дома 100 м2
+			.diagram
+				.diagram__list
+					.diagram__item.diagram__item--price.wow
+						span.diagram__title стоимость оборудования
+						span.diagram__subtitle В рублях
+						.diagram__block
+							.diagram__subblock.diagram__subblock--gas
+								span.diagram__price 1 млн
+								.diagram__img(data-height="203")
+								span.diagram__name Газ
+							.diagram__subblock.diagram__subblock--boiler
+								span.diagram__price 500 тыс
+								.diagram__img(data-height="105")
+								span.diagram__name Эл. котёл
+							.diagram__subblock.diagram__subblock--pelet
+								span.diagram__price 600 тыс
+								.diagram__img(data-height="125")
+								span.diagram__name Пелеты
+							.diagram__subblock.diagram__subblock--sunray
+								span.diagram__price 100 тыс
+								.diagram__img(data-height="23")
+								span.diagram__name SUNRAY
+					.diagram__item.diagram__item--intake.wow
+						span.diagram__title рабочее потребление
+						span.diagram__subtitle кВт* в месяц
+						.diagram__block
+							.diagram__subblock.diagram__subblock--gas
+								span.diagram__price 360
+								.diagram__img(data-height="23")
+								span.diagram__name Газ
+							.diagram__subblock.diagram__subblock--boiler
+								span.diagram__price 2160
+								.diagram__img(data-height="156")
+								span.diagram__name Эл. котёл
+							.diagram__subblock.diagram__subblock--pelet
+								span.diagram__price 360
+								.diagram__img(data-height="23")
+								span.diagram__name Пелеты
+							.diagram__subblock.diagram__subblock--sunray
+								span.diagram__price 1050
+								.diagram__img(data-height="86")
+								span.diagram__name SUNRAY
+					.diagram__item.diagram__item--cost.wow
+						span.diagram__title цена энергоносителя
+						span.diagram__subtitle Рублей в месяц
+						.diagram__block
+							.diagram__subblock.diagram__subblock--gas
+								span.diagram__price 2000 р
+								.diagram__img(data-height="89")
+								span.diagram__name Газ**
+							.diagram__subblock.diagram__subblock--boiler
+								span.diagram__price 0 р
+								.diagram__img(data-height="3")
+								span.diagram__name Эл. котёл
+							.diagram__subblock.diagram__subblock--pelet
+								span.diagram__price 5600 р
+								.diagram__img(data-height="203")
+								span.diagram__name Пелеты***
+							.diagram__subblock.diagram__subblock--sunray
+								span.diagram__price 0 р
+								.diagram__img(data-height="3")
+								span.diagram__name.diagram__name--bottom SUNRAY
+					.diagram__item.diagram__item--service.wow
+						span.diagram__title обслуживание и профилактика
+						span.diagram__subtitle Рублей в месяц
+						.diagram__block
+							.diagram__subblock.diagram__subblock--gas
+								span.diagram__price 670 р
+								.diagram__img(data-height="140")
+								span.diagram__name Газ**
+							.diagram__subblock.diagram__subblock--boiler
+								span.diagram__price 160 р
+								.diagram__img(data-height="55")
+								span.diagram__name Эл. котёл
+							.diagram__subblock.diagram__subblock--pelet
+								span.diagram__price 670 р
+								.diagram__img(data-height="140")
+								span.diagram__name Пелеты***
+							.diagram__subblock.diagram__subblock--sunray
+								span.diagram__price 0 р
+								.diagram__img(data-height="3")
+								span.diagram__name.diagram__name--bottom SUNRAY
+				p.diagram__descr * - при стоимости кВт\ч - 2,2 р
+					br
+					| ** - при стоимости м3 газа - 6,4 р
+					br
+					| *** - при стоимости 1 т. - 6000 р
+	section.compare__content--black
+		.container
+			h2.compare__title.compare__title--big стоимость отопления в месяц
+			span.compare__subtitle Электричество + энергоноситель + обслуживание
+			.diagram__item.diagram__item--month
+				.diagram__block
+					.diagram__subblock.diagram__subblock--gas
+						span.diagram__price 2792 р
+						.diagram__img(data-height="115")
+						span.diagram__name Газ
+					.diagram__subblock.diagram__subblock--boiler
+						span.diagram__price 4752 р
+						.diagram__img(data-height="230")
+						span.diagram__name Эл. котёл
+					.diagram__subblock.diagram__subblock--pelet
+						span.diagram__price 6392 р
+						.diagram__img(data-height="306")
+						span.diagram__name Пелеты
+					.diagram__subblock.diagram__subblock--sunray
+						span.diagram__price 2986 р
+						.diagram__img(data-height="141")
+						span.diagram__name SUNRAY
