@@ -1,4 +1,4 @@
-.basket {
+.basket-block {
 	position: relative;
 	z-index: 2;
 	font-size: 16px;
@@ -12,13 +12,13 @@
 	}
 	&:hover {
 		text-decoration: none;
-		.basket__text {
+		.basket-block__text {
 			border-bottom: 2px dotted transparent;
 		}
 	}
 }
 
-.basket__text {
+.basket-block__text {
 	display: block;
 	margin-right: 8px;
 	color: white;
@@ -27,6 +27,6 @@
 	@extend .trs;
 }
 
-.basket__count {
+.basket-block__count {
 	color: $accentColor;
 }

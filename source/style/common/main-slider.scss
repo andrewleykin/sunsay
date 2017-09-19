@@ -55,7 +55,7 @@
 	margin-bottom: 50px;
 }
 
-.main-slider__link {
+.main-slider__link, .link {
 	position: relative;
 	z-index: 100;
 	width: fit-content;
@@ -79,6 +79,9 @@
 		.main-slider__link--helper {
 			opacity: 1;
 		}
+		.link--helper {
+			opacity: 1;
+		}
 	}
 }
 
@@ -95,7 +98,7 @@
 	}
 }
 
-.main-slider__link--helper {
+.main-slider__link--helper, .link--helper {
 	position: absolute;
 	top: 0;
 	bottom: 0;

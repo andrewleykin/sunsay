@@ -1,0 +1,76 @@
+.basket
+	.basket__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Корзина']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.basket__content
+		.container
+			.basket__block
+				.basket__item.object
+					img.object__photo(src="app/img/basket/basket__1.jpg" "Фото товара")
+					span.object__name КОНВЕКТОР S702
+					.object__counter
+						include ../common/_counter
+					span.object__sum 7600 руб.
+				.basket__item.object
+					img.object__photo(src="app/img/basket/basket__1.jpg" "Фото товара")
+					span.object__name КОНВЕКТОР S702
+					.object__counter
+						include ../common/_counter
+					span.object__sum 7600 руб.
+			.basket__row
+				.basket__total
+					span.basket__title Итого: 15200 рублей
+					span.basket__descr Цена указана без учёта доставки
+				a.link--fill.basket__btn(href="#" id="basket-scroll") Оформить заказ
+			.basket__block
+				.basket-form__wrap
+					span.basket__title.basket-form__tile Оформление заказа
+					form.basket-form
+						span.basket__title.basket-form__tile--min Данные покупателя
+						.basket-form__row
+							.basket-form__block
+								label.basket-form__label(for="name") Имя и Фамилия
+								input.basket-form__input(type="text" name="name" id="name" placeholder="Иван Иванов")
+							.basket-form__block
+								label.basket-form__label(for="phone") Номер телефона
+								input.basket-form__input(type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__")
+							.basket-form__block
+								label.basket-form__label(for="mail") Электронная почта
+								input.basket-form__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
+						span.basket__title.basket-form__tile--min Способ доставки
+						.basket-form__row
+							input.basket-form__radio(type="radio" id="radio1" name="radio" checked)
+							label.basket-form__label(for="radio1") Курьером
+							input.basket-form__radio(type="radio" id="radio2" name="radio")
+							label.basket-form__label(for="radio2") Самовывоз
+						.basket-form__row
+							.basket-form__block
+								label.basket-form__label(for="country") Страна
+								input.basket-form__input(type="text" name="country" id="country" placeholder="Россия")
+							.basket-form__block
+								label.basket-form__label(for="city") Область, город
+								input.basket-form__input(type="text" name="city" id="city" placeholder="Московаская область, Москва")
+							.basket-form__block
+								label.basket-form__label(for="addres") Адрес
+								input.basket-form__input(type="text" name="addres" id="addres" placeholder="Красная Площадь, 1")
+						span.basket__title.basket-form__tile--min Способ оплаты
+						.basket-form__row
+							input.basket-form__radio(type="radio" id="radio3" name="radio2" checked)
+							label.basket-form__label(for="radio3") Банковской картой
+							input.basket-form__radio(type="radio" id="radio4" name="radio2")
+							label.basket-form__label(for="radio4") Наличными
+							input.basket-form__radio(type="radio" id="radio5" name="radio2")
+							label.basket-form__label(for="radio5") Банковским переводом
+			.basket__row
+				.basket__total
+					span.basket__title Итого: 16700 рублей
+					span.basket__descr C учетом доставки 1500 руб.
+				.basket__manager
+					a.link.basket__btn(href="#") Связаться с менеджером
+						.link--helper
+					span.basket__manager-text *для уточнения деталей заказа
+				a.link--fill.basket__btn(href="#") Перейти к оплате

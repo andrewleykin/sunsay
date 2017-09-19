@@ -61,6 +61,10 @@
 @import 'section/technology';
 /* Конец стилей technology */
 
+/* Стили секции basket */
+@import 'section/basket';
+/* Конец стилей basket */
+
 
 // Блоки
 
@@ -72,9 +76,9 @@
 @import 'common/phone';
 /* Конец стилей phone */
 
-/* Стили блока basket */
-@import 'common/basket';
-/* Конец стилей basket */
+/* Стили блока basket-block */
+@import 'common/basket-block';
+/* Конец стилей basket-block */
 
 /* Стили блока call */
 @import 'common/call';
@@ -107,3 +111,15 @@
 /* Стили блока diagram */
 @import 'common/diagram';
 /* Конец стилей diagram */
+
+/* Стили блока object */
+@import 'common/object';
+/* Конец стилей object */
+
+/* Стили блока counter */
+@import 'common/counter';
+/* Конец стилей counter */
+
+/* Стили блока basket-form */
+@import 'common/basket-form';
+/* Конец стилей basket-form */
