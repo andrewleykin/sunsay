@@ -1,0 +1,74 @@
+.technology
+	.technology__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Доставка и оплата']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.technology__banner
+		.container
+			.technology__wrap
+				+icon('wheel')
+				h1.technology__title.technology__title--min Технологии SUNRAY
+	section.technology__content
+		.container
+			h2.technology__title Теплоотдача больше в 5 раз
+			.technology__row
+				.technology__col
+					p.technology__text В основе наших обогревателей используется инновационный греющий элемент с площадью обогрева 100% 
+					img.technology__img(src="app/img/technology/technology__1.jpg" alt="technology")
+					span.technology__subtext Срок службы от 30 лет
+				.technology__col
+					p.technology__text В отличие от конкурентов, у которых используется стальная проволка, запаяная в пленку, греющая поверхность которой - меньше в пять раз.
+					img.technology__img(src="app/img/technology/technology__2.jpg" alt="technology")
+					span.technology__subtext Срок службы 3-10 лет
+	section.technology__day.day
+		.container
+			.day__content
+				span.technology__title.day__title платите меньше 10 рублей в сутки
+				span.technology__subtitle.day__subtitle За тепло в Вашем доме
+				p.technology__text.day__text Расход одного обогревателя от 3 до 9 рублей в сутки при использовании внешнего терморегулятора
+	section.technology__comfort.comfort
+		.container
+			span.technology__title.comfort__title 3 минуты до комфорта
+			span.technology__subtitle.comfort__subtitle Нагрев до рабочей температуры — 3 минуты
+			.comfort__content
+				.comfort__num
+					span.comfort__text 3
+					+icon('arrows')
+				span.comfort__text.comfort__text--mr =
+				span.comfort__text 90°C
+	section.technology__after.after
+		.container
+			span.technology__title.after__title НОВОЕ ПРОСТРАНСТВО ДЛЯ ЖИЗНИ
+			span.technology__subtitle.after__subtitle Котельная больше не нужна
+			.cocoen
+				img(src="app/img/technology/before.jpg" alt="before")
+				img(src="app/img/technology/before.jpg" alt="after")
+	section.technology__slider.tech-slider
+		.container
+			.tech-slider__dots
+				span.tech-slider__dot.tech-slider__dot--active Механический регулятор
+				span.tech-slider__dot Wi-Fi розетка
+				span.tech-slider__dot Умный дом
+			.tech-slider__list
+				.tech-slider__item.tech-slider__item--active
+					span.technology__title.tech-slider__title СВОЯ АТМОСФЕРА ВО ВСЕХ ПОМЕЩЕНИЯХ
+					span.technology__subtitle.tech-slider__subtitle Механический терморегулятор в каждом помещении
+					img.tech-slider__img(src="app/img/technology/tech-slider__1.jpg" alt="Механический терморегулятор")
+				.tech-slider__item
+					span.technology__title.tech-slider__title КАЖДЫЙ ОБОГРЕВАТЕЛЬ ПОД КОНТРОЛЕМ
+					span.technology__subtitle.tech-slider__subtitle Включайте конвектор со смартфона или составьте график его работы на неделю
+					img.tech-slider__img(src="app/img/technology/tech-slider__2.jpg" alt="Механический терморегулятор")
+				.tech-slider__item
+					span.technology__title.tech-slider__title ВСЕГО ОДИН СМАРТФОН
+					span.technology__subtitle.tech-slider__subtitle Для управления теплом в целом доме в любой точке планеты
+					img.tech-slider__img(src="app/img/technology/tech-slider__3.jpg" alt="Механический терморегулятор")
+				.tech-slider__controls
+					.tech-slider__prev
+						+icon('arrow-right')
+					.tech-slider__next
+						+icon('arrow-right')
+	section.technology__certificate
+		include ../common/_certificate

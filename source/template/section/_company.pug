@@ -25,21 +25,6 @@
 			h2.company__title.company__title--dark Дизайн
 			p.company__text Сказать честно, мы очень любим красивые вещи. Именно по этому дизайн наших обогревателей для нас играет одну из решающих ролей! Будущее за красивыми вещами. Мы постоянно ведём разработку новыых моделей и коллекций! От классиики до хай-тек.
 			img.company__img(src="app/img/company/company__3.jpg" alt="SUNRAY")
-			.company__certificate.certificate
-				h3.certificate__title Сертификаты и патенты
-				.certificate__block
-					.certificate__img
-						.certificate__pic(data-remodal-target="certificate-1")
-							.remodal(data-remodal-id="certificate-1")
-								button.remodal-close(data-remodal-action="close")
-								img(src="app/img/company/certificate__1.jpg")
-							img(src="app/img/company/certificate__1.jpg")
-						+icon('zoom')
-					.certificate__img
-						.certificate__pic(data-remodal-target="certificate-2")
-							.remodal(data-remodal-id="certificate-2")
-								button.remodal-close(data-remodal-action="close")
-								img(src="app/img/company/certificate__2.jpg")
-							img(src="app/img/company/certificate__2.jpg")
-						+icon('zoom')
+			.company__certificate
+				include ../common/_certificate
 			a.company__link(href="#") Перейти в каталог

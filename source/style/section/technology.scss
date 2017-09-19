@@ -1,0 +1,286 @@
+.technology {
+	padding-top: 25px;
+	@media (max-width: 960px) {
+		padding-top: 15px;
+	}
+}
+
+.technology__breadcrumbs {
+	margin-bottom: 30px;
+	@media (max-width: 960px) {
+		margin-bottom: 20px;
+	}
+}
+
+.technology__banner {
+	background: url(../img/technology/technology__banner.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	margin-bottom: 50px;
+	.icon {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+		fill: $accentColor;
+	}
+	@media (max-width: 960px) {
+		padding: 70px 0;
+		margin-bottom: 30px;
+	}
+}
+
+.technology__wrap {
+	display: flex;
+}
+
+.technology__title {
+	font-size: 36px;
+	font-family: $blackFont;
+	text-transform: uppercase;
+}
+
+.technology__title--min {
+	font-family: $boldFont;
+	font-size: 30px;
+}
+
+.technology__subtitle {
+	font-family: $boldFont;
+	font-size: 24px;
+}
+
+.technology__text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.technology__content {
+	text-align: center;
+	.technology__title {
+		margin-bottom: 70px;
+	}
+}
+.technology__row {
+	display: flex;
+}
+
+.technology__col {
+	width: calc(50% - 15px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.technology__text {
+		margin-bottom: 20px;
+	}
+	.technology__img {
+		margin-bottom: 20px;
+	}
+}
+
+.technology__subtext {
+	font-size: 24px;
+	font-family: $boldFont;
+	color: $accentColor;
+	text-shadow: 0px 2px 8px $accentColor;
+}
+
+.technology__day {
+	background: url(../img/technology/technology__3.jpg) center center no-repeat;
+	background-size: cover;
+	height: 1100px;
+	padding-top: 450px;
+}
+
+.day__content {
+	width: 50%;
+	span {
+		display: block;
+		margin-bottom: 40px;
+	}
+}
+.day__title {
+	line-height: 1.15;
+}
+.technology__comfort {
+	text-align: center;
+	margin-bottom: 180px;
+	.comfort__title {
+		display: block;
+		margin-bottom: 40px;
+	}
+	.comfort__subtitle {
+		display: block;
+		margin-bottom: 80px;
+	}
+}
+
+.comfort__content {
+	display: flex;
+	justify-content: center;
+}
+
+.comfort__num {
+	position: relative;
+	width: 200px;
+	.icon {
+		width: 203px;
+		height: 197px;
+		position: absolute;
+		top: -40px;
+		left: -55px;
+	}
+	.comfort__text {
+		margin-right: 120px;
+	}
+}
+
+.comfort__text {
+	font-family: $blackFont;
+	font-size: 105px;
+	color: $accentColor;
+	text-shadow: 0px 2px 8px $accentColor;
+}
+.comfort__text--mr {
+	margin-right: 60px;
+}
+
+.technology__after {
+	text-align: center;
+	span {
+		display: block;
+		margin-bottom: 55px;
+	}
+}
+
+.cocoen {
+	.cocoen-drag {
+		background: $accentColor;
+		width: 5px;
+		margin-bottom: 0;
+		&:before {
+			display: none;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 45px;
+			height: 45px;
+			background: url(../img/technology/play.png) center center no-repeat;
+			background-size: cover;
+			transform: rotate(90deg);
+			left: 50%;
+			margin-left: -25px;
+			margin-top: -18px;
+			position: absolute;
+			top: 50%;
+			cursor: pointer;
+		}
+	}
+}
+
+
+.technology__slider {
+	text-align: center;
+	padding-top: 75px;
+	margin-bottom: 30px;
+	.technology__title, .technology__subtitle {
+		display: block;
+	}
+}
+
+.tech-slider__dots {
+	margin-bottom: 75px;
+}
+
+.tech-slider__dot {
+	padding: 15px 25px;
+	font-size: 16px;
+	border-radius: 50px;
+	border: 3px solid #d9d9d9;
+	margin-right: 20px;
+	cursor: pointer;
+	@extend .trs;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: $accentColor;
+	}
+}
+
+.tech-slider__dot--active {
+	border-color: $accentColor;
+}
+
+.tech-slider__title {
+	margin-bottom: 50px;
+}
+
+.tech-slider__subtitle {
+	margin-bottom: 60px;
+}
+
+.tech-slider__list {
+	position: relative;
+	height: 610px;
+}
+
+.tech-slider__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	text-align: center;
+	@extend .trs;
+	transition-duration: .5s;
+}
+
+.tech-slider__item--active {
+	opacity: 1;
+}
+
+.tech-slider__controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tech-slider__prev, .tech-slider__next {
+	width: 40%;
+	display: flex;
+	cursor: pointer;
+	.icon {
+		width: 25px;
+		height: 40px;
+		margin: auto;
+		@extend .trs;
+	}
+}
+
+.tech-slider__prev {
+	.icon {
+		margin-left: 0;
+	}
+	&:hover {
+		.icon {
+			transform: scale(1.3);
+		}
+	}
+}
+
+.tech-slider__next {
+	.icon {
+		transform: rotate(180deg);
+		margin-right: 0;
+	}
+	&:hover {
+		.icon {
+			transform: rotate(180deg) scale(1.3);
+		}
+	}
+}
