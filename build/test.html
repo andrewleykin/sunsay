@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Корзина</title>
+    <title>Каталог</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="app/css/foundation.css">
@@ -59,108 +59,28 @@
   <!-- Конец секции header-->
   <!-- Начало секции main-->
   <main class="main">
-    <!-- Начало секции basket-->
-    <div class="basket">
-      <div class="basket__breadcrumbs">
-        <div class="container">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
-            </ul>
+    <div class="order-call">
+      <div class="remodal order-call__block" data-remodal-id="order-call">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+        <form class="order-call__form">
+          <div class="basket-form__row">
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="name">Имя и Фамилия</label>
+              <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+            </div>
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="phone">Номер телефона</label>
+              <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+            </div>
           </div>
-        </div>
+          <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+        </form>
       </div>
-      <div class="basket__content">
-        <div class="container">
-          <div class="basket__block">
-            <div class="basket__item object"><img class="object__photo" src="app/img/basket/basket__1.jpg" Фото товара><span class="object__name">КОНВЕКТОР S702</span>
-              <div class="object__counter">
-                <div class="counter">
-                  <div class="counter__btn dec">-
-                    <div class="counter__btn--helper"></div>
-                  </div>
-                  <input class="counter__input" type="text" value="1" data-min="1" data-max="100">
-                  <div class="counter__btn inc">+
-                    <div class="counter__btn--helper"></div>
-                  </div>
-                </div>
-              </div><span class="object__sum">7600 руб.</span>
-            </div>
-            <div class="basket__item object"><img class="object__photo" src="app/img/basket/basket__1.jpg" Фото товара><span class="object__name">КОНВЕКТОР S702</span>
-              <div class="object__counter">
-                <div class="counter">
-                  <div class="counter__btn dec">-
-                    <div class="counter__btn--helper"></div>
-                  </div>
-                  <input class="counter__input" type="text" value="1" data-min="1" data-max="100">
-                  <div class="counter__btn inc">+
-                    <div class="counter__btn--helper"></div>
-                  </div>
-                </div>
-              </div><span class="object__sum">7600 руб.</span>
-            </div>
-          </div>
-          <div class="basket__row">
-            <div class="basket__total"><span class="basket__title">Итого: 15200 рублей</span><span class="basket__descr">Цена указана без учёта доставки</span></div><a class="link--fill basket__btn" href="#" id="basket-scroll">Оформить заказ</a>
-          </div>
-          <div class="basket__block basket__block--hidden">
-            <div class="basket-form__wrap"><span class="basket__title basket-form__tile">Оформление заказа</span>
-              <form class="basket-form"><span class="basket__title basket-form__tile--min">Данные покупателя</span>
-                <div class="basket-form__row">
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="name">Имя и Фамилия</label>
-                    <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
-                  </div>
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="phone">Номер телефона</label>
-                    <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
-                  </div>
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="mail">Электронная почта</label>
-                    <input class="basket-form__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
-                  </div>
-                </div><span class="basket__title basket-form__tile--min">Способ доставки</span>
-                <div class="basket-form__row">
-                  <input class="basket-form__radio" type="radio" id="radio1" name="radio" checked>
-                  <label class="basket-form__label" for="radio1">Курьером</label>
-                  <input class="basket-form__radio" type="radio" id="radio2" name="radio">
-                  <label class="basket-form__label" for="radio2">Самовывоз</label>
-                </div>
-                <div class="basket-form__row">
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="country">Страна</label>
-                    <input class="basket-form__input" type="text" name="country" id="country" placeholder="Россия">
-                  </div>
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="city">Область, город</label>
-                    <input class="basket-form__input" type="text" name="city" id="city" placeholder="Московаская область, Москва">
-                  </div>
-                  <div class="basket-form__block">
-                    <label class="basket-form__label" for="addres">Адрес</label>
-                    <input class="basket-form__input" type="text" name="addres" id="addres" placeholder="Красная Площадь, 1">
-                  </div>
-                </div><span class="basket__title basket-form__tile--min">Способ оплаты</span>
-                <div class="basket-form__row">
-                  <input class="basket-form__radio" type="radio" id="radio3" name="radio2" checked>
-                  <label class="basket-form__label" for="radio3">Банковской картой</label>
-                  <input class="basket-form__radio" type="radio" id="radio4" name="radio2">
-                  <label class="basket-form__label" for="radio4">Наличными</label>
-                  <input class="basket-form__radio" type="radio" id="radio5" name="radio2">
-                  <label class="basket-form__label" for="radio5">Банковским переводом</label>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="basket__row basket__row--hidden">
-            <div class="basket__total"><span class="basket__title">Итого: 16700 рублей</span><span class="basket__descr">C учетом доставки 1500 руб.</span></div>
-            <div class="basket__manager"><a class="link basket__btn" href="#">Связаться с менеджером
-                <div class="link--helper"></div></a><span class="basket__manager-text">*для уточнения деталей заказа</span></div><a class="link--fill basket__btn" href="#">Перейти к оплате</a>
-          </div>
-        </div>
+      <div class="remodal order-call__block" data-remodal-id="thanks-order">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+        <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
       </div>
     </div>
-    <!-- Конец секции basket-->
   </main>
   <!-- Конец секции main-->
   <!-- Начало секции promo-->

@@ -1,0 +1,54 @@
+.order-call__block {
+	padding: 50px 30px 65px;
+	position: relative;
+}
+
+.order-call__title {
+	font-size: 24px;
+	font-family: $boldFont;
+	margin-bottom: 45px;
+	display: block;
+}
+
+.order-call__form {
+	.basket-form__row {
+		justify-content: space-between;
+	}
+	.basket-form__block {
+		text-align: left;
+		width: 50%;
+	}
+	.basket-form__input {
+		width: 100%;
+	}
+}
+.order-call__text {
+	font-size: 18px;
+}
+.order-call__submit {
+	@extend .link--fill;
+	font-size: 16px;
+	position: absolute;
+	@include center('x');
+	bottom: -20px;
+	cursor: pointer;
+	padding: 0 65px;
+	height: 50px;
+	line-height: 46px;
+}
+
+.close-link {
+	left: 100%;
+	color: $accentColor;
+	width: 45px;
+	height: 45px;
+	@extend .trs;
+	&:before {
+		width: 45px;
+		font-size: 85px;
+	}
+	&:hover {
+		color: $accentColor;
+		text-shadow: 0px 2px 10px $accentColor;
+	}
+}

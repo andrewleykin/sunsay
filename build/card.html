@@ -29,11 +29,33 @@
         <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
         <div class="header__phone">
           <div class="phone"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
-          <div class="header__call call"><a class="call__link" href="#"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+          <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
         </div>
       </div>
     </div>
   </header>
+  <div class="order-call">
+    <div class="remodal order-call__block" data-remodal-id="order-call">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+      <form class="order-call__form">
+        <div class="basket-form__row">
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="name">Имя и Фамилия</label>
+            <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+          </div>
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="phone">Номер телефона</label>
+            <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+          </div>
+        </div>
+        <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+      </form>
+    </div>
+    <div class="remodal order-call__block" data-remodal-id="thanks-order">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+      <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
+    </div>
+  </div>
   <!-- Конец секции header-->
   <!-- Начало секции main-->
   <main class="main">
@@ -55,16 +77,16 @@
           <div class="card__wrap">
             <div class="card__show card__show--discont">
               <div class="card__display">
-                <div class="card__img"><img src="app/img/card/card__more/card__1.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__2.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__3.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__4.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__5.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__6.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__7.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__8.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__9.png" alt="фото товара"></div>
-                <div class="card__img"><img src="app/img/card/card__more/card__10.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__1.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__2.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__3.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__4.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__5.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__6.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__7.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__8.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__9.png" alt="фото товара"></div>
+                <div class="card__img"><img class="card__img--zoom" src="app/img/card/card__more/card__10.png" alt="фото товара"></div>
               </div>
               <div class="card__more">
                 <div class="card__img"><img src="app/img/card/card__more/card__1.png" alt="фото товара"></div>

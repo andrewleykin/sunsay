@@ -29,11 +29,33 @@
         <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
         <div class="header__phone">
           <div class="phone"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
-          <div class="header__call call"><a class="call__link" href="#"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+          <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
         </div>
       </div>
     </div>
   </header>
+  <div class="order-call">
+    <div class="remodal order-call__block" data-remodal-id="order-call">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+      <form class="order-call__form">
+        <div class="basket-form__row">
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="name">Имя и Фамилия</label>
+            <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+          </div>
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="phone">Номер телефона</label>
+            <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+          </div>
+        </div>
+        <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+      </form>
+    </div>
+    <div class="remodal order-call__block" data-remodal-id="thanks-order">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+      <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
+    </div>
+  </div>
   <!-- Конец секции header-->
   <!-- Начало секции main-->
   <main class="main">
@@ -57,7 +79,7 @@
           <div class="contacts__wrapper">
             <div class="contacts__col">
               <div class="contacts__row"><a class="contacts__phone" href="tel:+78002220102">8 800 222 01 02</a>
-                <button class="contacts__order">Заказать звонок</button>
+                <button class="contacts__order" data-remodal-target="order-call">Заказать звонок</button>
               </div>
               <p class="contacts__text">Уважаемые клиенты и партнеры!</p>
               <p class="contacts__text">Мы стремимся к тому, чтобы наш магазин постоянно развивался и прикладываем к этому все усилия. Но мы бы не смогли успешно делать это без вашего непосредственного участия. Поэтому для нас важно каждое ваше мнение или идея.</p>

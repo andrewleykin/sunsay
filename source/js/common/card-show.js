@@ -15,4 +15,5 @@
 		asNavFor: '.card__display',
 		focusOnSelect: true
 	});
+	$('img.card__img--zoom').zoom();
 })();

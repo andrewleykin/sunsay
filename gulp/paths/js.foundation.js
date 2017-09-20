@@ -8,5 +8,6 @@ module.exports = [
   './node_modules/cocoen/dist/js/cocoen-jquery.min.js',
   './node_modules/wowjs/dist/wow.min.js',
   './node_modules/slick-carousel/slick/slick.min.js',
+  './node_modules/jquery-zoom/jquery.zoom.min.js',
   './source/js/libs/maskedInput.js'
 ];
