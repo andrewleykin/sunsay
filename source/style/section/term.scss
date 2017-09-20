@@ -1,6 +1,6 @@
 .term {
 	padding-top: 145px;
-	background: url(../img/compare/compare__more.jpg) center center no-repeat;
+	background: url(../img/compare/compare__more.jpg) 70% top no-repeat;
 	background-size: cover;
 	height: 1100px;
 	@media (max-width: 960px) {
@@ -53,6 +53,10 @@
 	font-family: $blackFont;
 	margin-bottom: 60px;
 	display: block;
+	@media (max-width: 960px) {
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
 }
 .term__link {
 	@extend .company__link;

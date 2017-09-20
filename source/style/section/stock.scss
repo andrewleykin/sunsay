@@ -48,10 +48,45 @@
 			font-size: 36px;
 		}
 	}
+	@media (max-width: 960px) {
+		padding: 40px 0 40px 30px;
+		.main-slider__text--black {
+			line-height: 1.15;
+			margin-bottom: 20px;
+			font-size: 36px;
+		}
+		.main-slider__ball {
+			width: 90px;
+			height: 90px;
+			padding: 10px 0;
+			right: 35%;
+			span {
+				font-size: 12px;
+			}
+			.main-slider__ball-text {
+				font-size: 24px;
+			}
+		}
+		.main-slider__ball--big {
+			width: 115px;
+			height: 115px;
+			padding: 15px 0;
+			right: 15%;
+			span {
+				font-size: 14px;
+			}
+			.main-slider__ball-text {
+				font-size: 30px;
+			}
+		}
+	}
 }
 
 .stoke__roll {
 	li {
 		font-size: 18px;
+		@media (max-width: 960px) {
+			font-size: 16px;
+		}
 	}
 }

@@ -16,6 +16,9 @@
 			border-bottom: 2px dotted transparent;
 		}
 	}
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
 }
 
 .basket-block__text {

@@ -16,6 +16,9 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 45px;
+	@media (max-width: 960px) {
+		margin-bottom: 25px;
+	}
 }
 
 .card__show {
@@ -81,6 +84,9 @@
 			}
 		}
 	}
+	@media (max-width: 960px) {
+		margin-bottom: 10px;
+	}
 }
 
 .card__more {
@@ -122,28 +128,44 @@
 	display: block;
 	margin-bottom: 35px;
 	text-transform: uppercase;
+	@media (max-width: 960px) {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
 }
 
 .card__price-row {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 45px;
+	@media (max-width: 960px) {
+		margin-bottom: 25px;
+	}
 }
 
 .card__cost--old {
 	margin-bottom: 15px;
 	display: block;
+	@media (max-width: 960px) {
+		margin-bottom: 10px;
+	}
 }
 
 .card__cost {
 	font-size: 30px;
 	font-family: $boldFont;
-	color: $accentColor
+	color: $accentColor;
+	@media (max-width: 960px) {
+		font-size: 24px;
+	}
 }
 
 .economy__text {
 	display: block;
 	margin-bottom: 15px;
+	@media (max-width: 960px) {
+		margin-bottom: 10px;
+	}
 }
 
 .economy__sum {
@@ -153,12 +175,18 @@
 	color: white;
 	padding: 5px 15px;
 	border-radius: 8px;
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
 }
 
 .card__basket-row {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 60px;
+	@media (max-width: 960px) {
+		margin-bottom: 40px;
+	}
 }
 
 .card__btn {
@@ -173,6 +201,10 @@
 		height: 19px;
 		fill: white;
 		margin-right: 15px;
+	}
+	@media (max-width: 960px) {
+		height: 40px;
+		font-size: 14px;
 	}
 }
 
@@ -189,9 +221,19 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+	@media (max-width: 960px) {
+		font-size: 14px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 .card__shot {
 	margin-bottom: 50px;
+	@media (max-width: 960px) {
+		margin-bottom: 30px;
+	}
 }
 .card__shot-wrap {
 	padding: 25px 0;
@@ -199,6 +241,9 @@
 	border-bottom: 2px dotted #bcbcbc;
 	display: flex;
 	justify-content: space-around;
+	@media (max-width: 960px) {
+		padding: 15px 0;
+	}
 }
 
 .card__shot-item {
@@ -207,4 +252,7 @@
 	color: $accentColor;
 	text-transform: uppercase;
 	text-shadow: 0px 2px 10px $accentColor;
+	@media (max-width: 960px) {
+		font-size: 28px;
+	}
 }

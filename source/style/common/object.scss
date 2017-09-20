@@ -7,6 +7,9 @@
 	&:last-child {
 		border-bottom: none;
 	}
+	@media (max-width: 960px) {
+		padding: 20px 0;
+	}
 }
 
 .object__name {
@@ -14,13 +17,22 @@
 	font-family: $blackFont;
 	margin-right: auto;
 	margin-left: 40px;
+	@media (max-width: 960px) {
+		margin-left: 30px;
+	}
 }
 
 .object__counter {
 	margin-right: 270px;
+	@media (max-width: 960px) {
+		margin-right: 200px;
+	}
 }
 
 .object__sum {
 	font-family: $mediumFont;
 	font-size: 16px;
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
 }

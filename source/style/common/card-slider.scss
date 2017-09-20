@@ -1,5 +1,8 @@
 .card-slider {
 	margin-bottom: 90px;
+	@media (max-width: 960px) {
+		margin-bottom: 79px;
+	}
 }
 
 .card-slider__title {
@@ -8,6 +11,10 @@
 	font-family: $boldFont;
 	text-align: center;
 	margin-bottom: 50px;
+	@media (max-width: 960px) {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
 }
 .card-slider__list {
 	width: 900px;
@@ -60,11 +67,17 @@
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
+	@media (max-width: 960px) {
+		margin-bottom: 15px;
+	}
 }
 
 .card-slider__wrap {
 	padding: 0 20px;
 	margin-bottom: 30px;
+	@media (max-width: 960px) {
+		margin-bottom: 20px;
+	}
 }
 
 .card-slider__name {
@@ -73,10 +86,17 @@
 	font-family: $boldFont;
 	text-transform: uppercase;
 	margin-bottom: 25px;
+	@media (max-width: 960px) {
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
 }
 
 .card-slider__descr {
 	margin-bottom: 25px;
+	@media (max-width: 960px) {
+		margin-bottom: 15px;
+	}
 }
 
 .card-slider__descr-text {
@@ -98,6 +118,9 @@
 	font-size: 18px;
 	font-family: $boldFont;
 	color: $accentColor;
+	@media (max-width: 960px) {
+		font-size: 16px;
+	}
 }
 
 .card-slider__bottom {
@@ -121,6 +144,10 @@
 		.card-slider__more--helper {
 			opacity: 1;
 		}
+	}
+	@media (max-width: 960px) {
+		height: 50px;
+		line-height: 48px;
 	}
 }
 
@@ -148,5 +175,9 @@
 	border-bottom-right-radius: 10px;
 	&:hover {
 		box-shadow: 0px 14px 57px -14px #ed0a63;
+	}
+	@media (max-width: 960px) {
+		height: 50px;
+		line-height: 50px;
 	}
 }
