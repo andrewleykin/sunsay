@@ -9,5 +9,6 @@ module.exports = [
   './source/js/common/diagram.js',
   './source/js/common/counter.js',
   './source/js/common/mask.js',
-  './source/js/common/basket-scroll.js'
+  './source/js/common/basket-scroll.js',
+  './source/js/common/card-show.js'
 ];

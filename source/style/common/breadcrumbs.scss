@@ -19,8 +19,10 @@
 		content: "";
 		display: block;
 		width: 6px;
-		height: 9px;
+		height: 10px;
 		background: url(../img/arrow-right--small.png) center center no-repeat;
+		background-size: cover;
+		transform: rotate(180deg);
 		margin-left: 10px;
 	}
 }

@@ -2,14 +2,26 @@
 
 (function(){
 	var link = $('#basket-scroll'),
+		block = $('.basket__block--hidden'),
+		row = $('.basket__row--hidden'),
 		body = $('body, html'),
-		block = $('.basket-form__tile').offset().top;
+		duration = 500;
 
 
-		link.click(function(e) {
-			e.preventDefault();
+	link.click(function(e) {
+		e.preventDefault();
 
-			$('body, html').animate({scrollTop: block}, 1000);
+		block.slideDown(duration);
+
+		row.slideDown(duration, function() {
+			$(this).attr('style', 'display: flex');
 		});
+
+		setTimeout(function(){
+			var blockHeight = $('.basket-form__wrap').offset().top;
+			body.animate({scrollTop: blockHeight}, 1000);
+		}, duration);
+	});
+
 
 })();

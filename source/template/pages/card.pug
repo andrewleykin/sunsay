@@ -1,0 +1,17 @@
+extends ../_template
+
+block variables
+  - var title = 'Карточка товара'
+  - var url_js = "app/js/app.js"
+  - var url_css = "app/css/app.css"
+
+block content
+  // Начало секции card
+  include ../section/_card
+  // Конец секции card
+  // Начало блока card-tabs
+  include ../common/_card-tabs
+  // Конец блока card-tabs
+  // Начало блока card-slider
+  include ../common/_card-slider
+  // Конец блока card-slider

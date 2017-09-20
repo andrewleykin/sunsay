@@ -1,0 +1,39 @@
+.card
+	.card__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Каталог отопления', 'Конвектор S702']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.card__block
+		.container
+			.card__wrap
+				.card__show.card__show--discont
+					.card__display
+						each val in [1,2,3,4,5,6,7,8,9,10]
+							.card__img
+								img(src="app/img/card/card__more/card__"+val+".png" alt="фото товара")
+					.card__more
+						each val in [1,2,3,4,5,6,7,8,9,10]
+							.card__img
+								img(src="app/img/card/card__more/card__"+val+".png" alt="фото товара")
+				.card__info
+					span.card__name КОНВЕКТОР S702
+					.card__price-row
+						.card__cost
+							span.card__cost--old Старая цена: 8600 руб.
+							span.card__cost Цена: 7600 руб.
+						.card__economy.economy
+							span.economy__text Экономия
+							span.economy__sum 1000
+					.card__basket-row
+						.card__counter
+							include ../common/_counter
+						.card__btn.link--fill
+							+icon('add-basket')
+							span.card__btn-text Добавить в корзину
+					.card__descr
+						ul.card__list
+							each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
+								li.card__item= val
