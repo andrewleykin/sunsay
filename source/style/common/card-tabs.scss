@@ -1,0 +1,78 @@
+.card-tabs {
+	margin-bottom: 50px;
+}
+
+.card-tabs__controls {
+	display: flex;
+	margin-bottom: 40px;
+}
+.card-tabs__control {
+	padding: 15px 25px;
+	font-size: 16px;
+	border-radius: 50px;
+	border: 3px solid #d9d9d9;
+	margin-right: 25px;
+	cursor: pointer;
+	@extend .trs;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: $accentColor;
+	}
+}
+
+.card-tabs__control--active {
+	border-color: $accentColor;
+	font-family: $mediumFont;
+}
+
+.card-tabs__list {
+	position: relative;
+	height: 580px;
+	border-bottom: 1px solid black;
+}
+.card-tabs__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	@extend .trs;
+}
+.card-tabs__item--active {
+	opacity: 1;
+}
+.card-tabs__title {
+	font-size: 18px;
+	font-family: $mediumFont;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.card-tabs__row {
+	display: flex;
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.card-tabs__subrow {
+	display: flex;
+	width: 360px;
+	margin-right: 15px;
+}
+
+.card-tabs__name {
+	display: block;
+	white-space: nowrap;
+	margin-right: 15px;
+}
+
+.card-tabs__dots {
+	width: 100%;
+	background: url(../img/card/dots.png) center bottom repeat-x;
+}

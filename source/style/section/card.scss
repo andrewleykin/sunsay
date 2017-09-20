@@ -51,11 +51,13 @@
 
 .card__display,{
 	position: relative;
+	margin-bottom: 15px;
 	.card__img {
 		width: 573px;
 		height: 393px;
 		img {
 			width: 100%;
+			height: 393px;
 		}
 	}
 	.slick-arrow {
@@ -114,15 +116,95 @@
 	width: calc(50% - 15px);
 }
 
+.card__name {
+	font-size: 36px;
+	font-family: $boldFont;
+	display: block;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+
+.card__price-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+
+.card__cost--old {
+	margin-bottom: 15px;
+	display: block;
+}
+
+.card__cost {
+	font-size: 30px;
+	font-family: $boldFont;
+	color: $accentColor
+}
+
+.economy__text {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.economy__sum {
+	background: $accentColor;
+	font-size: 16px;
+	font-family: $boldFont;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 8px;
+}
+
+.card__basket-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
 
 .card__btn {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	height: 48px;
+	font-size: 16px;
+	margin: 0;
 	.icon {
 		width: 19px;
 		height: 19px;
 		fill: white;
 		margin-right: 15px;
 	}
+}
+
+.card__item {
+	display: flex;
+	font-size: 16px;
+	margin-bottom: 15px;
+	&:before {
+		content: "•";
+		display: block;
+		color: $accentColor;
+		margin-right: 8px;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.card__shot {
+	margin-bottom: 50px;
+}
+.card__shot-wrap {
+	padding: 25px 0;
+	border-top: 2px dotted #bcbcbc;
+	border-bottom: 2px dotted #bcbcbc;
+	display: flex;
+	justify-content: space-around;
+}
+
+.card__shot-item {
+	font-size: 36px;
+	font-family: $blackFont;
+	color: $accentColor;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 10px $accentColor;
 }

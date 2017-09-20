@@ -1,6 +1,7 @@
 .header {
 	position: relative;
 	background: #262626;
+	padding: 20px 0;
 }
 
 .header__slider {
@@ -15,8 +16,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 26px;
-	margin-bottom: 15px;
 	position: relative;
 	z-index: 5;
 }

@@ -21,11 +21,11 @@
 				.card__info
 					span.card__name КОНВЕКТОР S702
 					.card__price-row
-						.card__cost
+						.card__cost-block
 							span.card__cost--old Старая цена: 8600 руб.
 							span.card__cost Цена: 7600 руб.
 						.card__economy.economy
-							span.economy__text Экономия
+							span.economy__text экономия
 							span.economy__sum 1000
 					.card__basket-row
 						.card__counter
@@ -37,3 +37,8 @@
 						ul.card__list
 							each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
 								li.card__item= val
+	.card__shot
+		.container
+			.card__shot-wrap
+				each val in ['Пуля 1','Пуля 2','Пуля 3','Пуля 4']
+					span.card__shot-item= val
