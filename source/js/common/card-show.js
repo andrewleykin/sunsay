@@ -13,7 +13,7 @@
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		asNavFor: '.card__display',
-		focusOnSelect: true
+		focusOnSelect: true,
 	});
-	$('img.card__img--zoom').zoom();
+
 })();

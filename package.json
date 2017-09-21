@@ -30,6 +30,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "~3.2.1",
     "jquery-zoom": "^1.7.20",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "~7.0.0",
     "remodal": "^1.1.1",
     "slick-carousel": "^1.7.1",

@@ -69,6 +69,10 @@
 @import 'section/card';
 /* Конец стилей card */
 
+/* Стили секции montage */
+@import 'section/montage';
+/* Конец стилей montage */
+
 
 // Блоки
 
@@ -139,3 +143,11 @@
 /* Стили блока order-call */
 @import 'common/order-call';
 /* Конец стилей order-call */
+
+
+// Библиотеки
+
+
+/* Стили библиотеки remodal */
+@import 'libs/remodal';
+/* Конец библиотеки remodal */

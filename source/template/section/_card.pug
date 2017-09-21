@@ -13,11 +13,11 @@
 					.card__display
 						each val in [1,2,3,4,5,6,7,8,9,10]
 							.card__img
-								img.card__img--zoom(src="app/img/card/card__more/card__"+val+".png" alt="фото товара")
+								img.card__img--zoom(src="app/img/card/card__more/card__"+val+".jpg" alt="фото товара" data-remodal-target="cardZoom" + val)
 					.card__more
 						each val in [1,2,3,4,5,6,7,8,9,10]
 							.card__img
-								img(src="app/img/card/card__more/card__"+val+".png" alt="фото товара")
+								img(src="app/img/card/card__more/card__"+val+".jpg" alt="фото товара")
 				.card__info
 					span.card__name КОНВЕКТОР S702
 					.card__price-row
@@ -40,5 +40,17 @@
 	.card__shot
 		.container
 			.card__shot-wrap
-				each val in ['Пуля 1','Пуля 2','Пуля 3','Пуля 4']
-					span.card__shot-item= val
+				span.card__shot-item 3
+					.card__short-item--small года гарантии
+				span.card__shot-item 3
+					.card__short-item--small минуты нагрева до рабочей температуры
+				span.card__shot-item 10м
+					.card__shot-item--sup 2
+					.card__short-item--small площадь обогрева
+				span.card__shot-item 
+					+icon('check')
+					.card__short-item--small подходит как основное отопление
+	each val in [1,2,3,4,5,6,7,8,9,10]
+		.remodal(data-remodal-id="cardZoom" + val)
+			button.remodal-close(data-remodal-action="close")
+			img(src="app/img/card/card__more/card__"+val+".jpg" alt="фото товара")
