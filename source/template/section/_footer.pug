@@ -13,8 +13,8 @@ footer.footer
 					each val in [ 'vk', 'inst', 'youtube', 'fb', 'od']
 						a.social__link(href="#")
 							+icon('' + val)
-				.footer__subscribe.subscribe
-					button.subscribe__btn(type="button")
+				.footer__subscribe
+					button(type="button" data-remodal-target="subscribe")
 						i.fa.fa-envelope
 						| Подписаться на акции
 			.footer__block
@@ -46,3 +46,4 @@ footer.footer
 				| MySunray.ru - интернет магазин обогревателей.
 				br
 				| Все права защищены.
+include ../common/_subscribe

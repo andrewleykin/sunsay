@@ -1,0 +1,18 @@
+.subscribe
+	.remodal.subscribe__block(data-remodal-id="subscribe")
+		button.remodal-close.close-link(data-remodal-action="close")
+		.subscribe__banner
+			span.subscribe__subtitle подпишитесь на новости
+			p.subscribe__title и получите доступ к эксклюзивным предложениям и закрытым акциям!
+			span.subscribe__title--big + 
+				br
+				| бонус
+			span.subscribe__descr *на первую покупку
+			.subscribe__ball
+				span Скидка
+				span.subscribe__ball-text 1000
+				span рублей*
+		.subscribe__email
+			label.subscribe__label(for="mail")  Введите Ваш e-mail
+			input.subscribe__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
+			input.subscribe__submit.link--fill(type="submit" name="submit" id="submit")

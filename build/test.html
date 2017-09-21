@@ -143,8 +143,8 @@
                 <use xlink:href="app/img/sprite/sprite.svg#od"></use>
               </svg></a>
           </div>
-          <div class="footer__subscribe subscribe">
-            <button class="subscribe__btn" type="button"><i class="fa fa-envelope"></i>Подписаться на акции</button>
+          <div class="footer__subscribe">
+            <button type="button" data-remodal-target="subscribe"><i class="fa fa-envelope"></i>Подписаться на акции</button>
           </div>
         </div>
         <div class="footer__block"><span class="footer__title">Свяжитесь с нами</span>
@@ -169,5 +169,19 @@
       </div>
     </div>
   </footer>
+  <div class="subscribe">
+    <div class="remodal subscribe__block" data-remodal-id="subscribe">
+      <button class="remodal-close close-link" data-remodal-action="close"></button>
+      <div class="subscribe__banner"><span class="subscribe__subtitle">подпишитесь на новости</span>
+        <p class="subscribe__title">и получите доступ к эксклюзивным предложениям и закрытым акциям!</p><span class="subscribe__title--big">+ <br>бонус</span><span class="subscribe__descr">*на первую покупку</span>
+        <div class="subscribe__ball"><span>Скидка</span><span class="subscribe__ball-text">1000</span><span>рублей*</span></div>
+      </div>
+      <div class="subscribe__email">
+        <label class="subscribe__label" for="mail"> Введите Ваш e-mail</label>
+        <input class="subscribe__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
+        <input class="subscribe__submit link--fill" type="submit" name="submit" id="submit">
+      </div>
+    </div>
+  </div>
   <!-- Конец секции footer-->
 </html>
