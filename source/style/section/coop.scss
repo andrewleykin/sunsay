@@ -63,3 +63,135 @@
 		margin-bottom: 70px;
 	}
 }
+
+.coop__dots {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.coop__dot {
+	padding: 15px 30px;
+	font-size: 16px;
+	border-radius: 50px;
+	border: 3px solid #d9d9d9;
+	margin-right: 25px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	@extend .trs;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: $accentColor;
+	}
+	.icon {
+		width: 18px;
+		height: 18px;
+		fill: #f63f48;
+		margin-right: 10px;
+	}
+	@media (max-width: 960px) {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+}
+
+.coop__dot--active {
+	border-color: $accentColor;
+	font-family: $mediumFont;
+}
+
+.coop__text {
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.coop__list {
+	position: relative;
+	height: 565px;
+	margin-bottom: 40px;
+}
+
+.coop__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	@extend .trs;
+}
+
+.coop__item--active {
+	opacity: 1;
+}
+
+.coop__slider {
+	display: flex;
+	position: relative;
+	z-index: 5;
+}
+
+.coop__img {
+	width: 33%;
+	height: 400px;
+	@extend .trs;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.5);
+		@extend .trs;
+	}
+	&:hover {
+		width: 50%;
+		&:after {
+			background: transparent;
+		}
+	}
+}
+.coop__img--1 {
+	background: url(../img/coop/coop__slider-1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.coop__img--2 {
+	background: url(../img/coop/coop__slider-2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.coop__img--3 {
+	background: url(../img/coop/coop__slider-3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.coop__row {
+	display: flex;
+	justify-content: space-between;
+}
+.coop__col {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 40px;
+	.icon {
+		width: 87px;
+		height: 105px;
+		margin-bottom: 20px;
+	}
+}
+.coop__name {
+	display: block;
+	font-size: 18px;
+	font-family: $mediumFont;
+	line-height: 30px;
+}
+
+.coop__call-me {
+	margin-bottom: 90px;
+}

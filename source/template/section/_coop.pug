@@ -13,3 +13,54 @@
 				h1.coop__title Сотрудничество
 	.coop__content
 		.container
+			.coop__dots
+				.coop__dot.coop__dot--active
+					+icon('brush')
+					| Дизайнерам
+				.coop__dot
+					+icon('user')
+					| Корпоративным клиентам
+				.coop__dot
+					+icon('cubes')
+					| Стать дилером
+	section.coop__innner
+		.container
+			ul.coop__list
+				.coop__item.coop__item--active
+					p.coop__text Мы предлагаем взаимовыгодные условия сотрудничества как со студиями или агентствами, так и с самостоятельными дизайнерами. Посмотрите примеры удачного применения наших конвекторов в интерьере. 
+						b Оставьте заявку в форме ниже, чтобы получить эксклюзивные условия сотрудничества с компанией SUNRAY!
+					.coop__slider
+						each val in [1,2,3]
+							.coop__img(class="coop__img--"+val)
+				.coop__item
+					p.coop__text Интернет-магазин SUNRAY заинтересован в работе с компаниями, профессионально занимающимися меблировкой квартир, апартаментов, загородных домов, кафе, ресторанов, гостиничных комплексов и развлекательных клубов. Своим постоянным клиентам мы предлагаем только выгодные условия сотрудничества! 
+						b Оставьте заявку в форме ниже, чтобы получить эксклюзивные условия сотрудничества с компанией SUNRAY!
+					.coop__row
+						.coop__col
+							+icon('trophy')
+							span.coop__name Высокое качество продукции
+						.coop__col
+							+icon('technology')
+							span.coop__name Поставки на взаимовыгодных условиях
+						.coop__col
+							+icon('clock')
+							span.coop__name Производство оптовых партий в срок
+						.coop__col
+							+icon('social')
+							span.coop__name Персональный менеджер
+				.coop__item
+					p.coop__text Мы находимся в постоянном поиске дилеров во всех городах России и стран СНГ. Мы заинтересованы во взаимовыгодном и долгосрочном сотрудничестве и готовы предоставить лучшие партнерские условия для наших дилеров. Узнайте, есть ли представительство компании SUNRAY в Вашем городе - 
+						b оставьте заявку в форме ниже, чтобы получить эксклюзивные условия сотрудничества с компанией SUNRAY!
+			.coop__call-me.call-me
+				+icon('envelope')
+				.call-me__info
+					span.call-me__title Свяжитесь с нами!
+					span.call-me__subtitle Оставьте свои контактные данные и мы Вам перезвоним
+					.basket-form__row
+						.basket-form__block
+							label.basket-form__label(for="name") Имя и Фамилия
+							input.basket-form__input(type="text" name="name" id="name" placeholder="Иван Иванов")
+						.basket-form__block
+							label.basket-form__label(for="phone") Номер телефона
+							input.basket-form__input(type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__")
+				input.order-call__submit(type="submit" name="submit" id="submit" value="Жду звонка!" data-remodal-target="thanks-order")
