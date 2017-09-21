@@ -11,4 +11,10 @@
 		border-bottom: 2px dotted transparent;
 		color: $accentColor;
 	}
+	@media (max-width: 1200px) {
+		font-size: 12px;
+	}
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
 }
