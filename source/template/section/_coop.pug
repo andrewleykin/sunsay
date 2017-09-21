@@ -1,0 +1,15 @@
+.coop
+	.coop__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Сотрудничество']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.coop__banner
+		.container
+			.coop__wrap
+				+icon('handshake')
+				h1.coop__title Сотрудничество
+	.coop__content
+		.container

@@ -1,0 +1,65 @@
+.coop {
+	padding-top: 25px;
+	@media (max-width: 960px) {
+		padding-top: 15px;
+	}
+}
+
+.coop__breadcrumbs {
+	margin-bottom: 30px;
+	@media (max-width: 960px) {
+		margin-bottom: 20px;
+	}
+}
+
+.coop__banner {
+	background: url(../img/coop/coop__banner.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	margin-bottom: 50px;
+	position: relative;
+	.icon {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+		fill: $accentColor;
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.1);
+		z-index: 1;
+	}
+	@media (max-width: 960px) {
+		padding: 70px 0;
+		margin-bottom: 30px;
+	}
+}
+
+.coop__wrap {
+	display: flex;
+	position: relative;
+	align-items: center;
+	z-index: 2;
+}
+
+.coop__title {
+	font-size: 30px;
+	font-family: $boldFont;
+	color: white;
+	@media (max-width: 960px) {
+		font-size: 24px;
+	}
+}
+
+.coop__content {
+	margin-bottom: 90px;
+	@media (max-width: 960px) {
+		margin-bottom: 70px;
+	}
+}
