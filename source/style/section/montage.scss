@@ -44,6 +44,7 @@
 .montage__wrap {
 	display: flex;
 	position: relative;
+	align-items: center;
 	z-index: 2;
 }
 
@@ -108,5 +109,13 @@
 	}
 	&:last-child {
 		margin-bottom: 0;
+	}
+	span {
+		color: $accentColor;
+		font-family: $mediumFont;
+		text-transform: uppercase;
+		display: block;
+		margin-left: 5px;
+		text-decoration: underline;
 	}
 }

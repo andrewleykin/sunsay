@@ -12,5 +12,6 @@ module.exports = [
   './source/js/common/basket-scroll.js',
   './source/js/common/card-show.js',
   './source/js/common/card-slider.js',
-  './source/js/common/card-tabs.js'
+  './source/js/common/card-tabs.js',
+  './source/js/common/dilivery-tabs.js'
 ];

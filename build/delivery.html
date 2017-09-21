@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Доставка и оплата</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="app/css/foundation.css">
+    <link rel="stylesheet" href="app/css/app.css">
+    <script src="app/js/foundation.js" defer></script>
+    <script src="app/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body></body>
+  <!-- Начало секции header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo"><img class="header__img" src="app/img/logo.png" alt="logo"></div>
+        <div class="header__nav">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">Каталог обогревателей</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
+        <div class="header__phone">
+          <div class="phone"><a class="phone__link" href="tel:+78002220102">8 800 222 01 02</a></div>
+          <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="order-call">
+    <div class="remodal order-call__block" data-remodal-id="order-call">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+      <form class="order-call__form">
+        <div class="basket-form__row">
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="name">Имя и Фамилия</label>
+            <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+          </div>
+          <div class="basket-form__block">
+            <label class="basket-form__label" for="phone">Номер телефона</label>
+            <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+          </div>
+        </div>
+        <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+      </form>
+    </div>
+    <div class="remodal order-call__block" data-remodal-id="thanks-order">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+      <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
+    </div>
+  </div>
+  <!-- Конец секции header-->
+  <!-- Начало секции main-->
+  <main class="main">
+    <!-- Начало секции delivery-->
+    <div class="delivery">
+      <div class="delivery__breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Доставка и оплата</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="delivery__banner">
+        <div class="container">
+          <div class="delivery__wrap">
+            <svg class="icon icon__delivery" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#delivery"></use>
+            </svg>
+            <h1 class="delivery__title">Доставка и оплата</h1>
+          </div>
+        </div>
+      </div>
+      <div class="delivery__content">
+        <div class="container">
+          <div class="delivery__dots">
+            <div class="delivery__dot delivery__dot--active">
+              <svg class="icon icon__truck" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#truck"></use>
+              </svg>Доставка
+            </div>
+            <div class="delivery__dot">
+              <svg class="icon icon__credit-card" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#credit-card"></use>
+              </svg>Оплата
+            </div>
+          </div>
+          <div class="delivery__list">
+            <div class="delivery__item delivery__item--active">
+              <ul class="dilivery__roll">
+                <li class="dilivery__roll-item">Доставка от 2 до 7 дней</li>
+                <li class="dilivery__roll-item">Вы можете самостоятельно забрать свой заказ в пункте самовывоза транспортной компании</li>
+                <li class="dilivery__roll-item">Курьерская доставка</li>
+              </ul>
+              <div class="dilivery__row">
+                <div class="dilivery__col">
+                  <svg class="icon icon__car" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#car"></use>
+                  </svg><span class="dilivery__subtitle">Самовывоз из офиса <br>в г. Челябинск</span>
+                  <p class="dilivery__text">Вы можете самостоятельно забрать свой заказ из офиса компании SUNRAY в городе Челябинск по адресу Автоматики 3 в будние дни с 9:00 до 18:00.</p>
+                </div>
+                <div class="dilivery__col">
+                  <svg class="icon icon__gps" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#gps"></use>
+                  </svg><span class="dilivery__subtitle">Доставка транспортной компанией до пункта выдачи</span>
+                  <p class="dilivery__text">Компания SUNRAY осуществляет доставку заказов транспортной компанией СДЕК до пунктов самовывоза данной ТК в любой город России и стран СНГ (при условии, что в Вашем городе присутствует пункт выдачи ТК СДЕК).</p>
+                </div>
+                <div class="dilivery__col">
+                  <svg class="icon icon__man" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#man"></use>
+                  </svg><span class="dilivery__subtitle">Курьерская доставка до двери</span>
+                  <p class="dilivery__text">Компания SUNRAY осуществляет курьерскую доставку заказов прямо до двери Вашего дома. (выделить) Обратите внимание, что курьер передает товар для проверки только после оплаты.</p>
+                </div>
+              </div>
+              <div class="dilivery__block">
+                <svg class="icon icon__return" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#return"></use>
+                </svg><span class="dilivery__subtitle">Возврат</span>
+                <p class="dilivery__text">При приемке товара Покупатель должен внимательно проверить его количество, качество и ассортимент на соответствие сопроводительным документам и заказу. После осмотра и приема товара Покупатель утрачивает право предъявления претензий, которые можно выявить при приемке товара.</p>
+                <p class="dilivery__text">Гарантия не распространяется на повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, т.е. если товар может быть использован исключительно приобретающим его потребителем.</p>
+                <p class="dilivery__text">Возврат и обмен товара – в течение 7 дней с момента покупки.</p>
+                <p class="dilivery__text">Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный вид и потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам возврат полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент оплачивает услуги доставки.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <div class="dilivery__subtitle--medium">Для вашего удобства в нашем интернет-магазине предусмотрено несколько вариантов оплаты:</div>
+              <div class="dilivery__row--2">
+                <div class="dilivery__col--2">
+                  <svg class="icon icon__money" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#money"></use>
+                  </svg><span class="dilivery__subtitle">Наличными</span>
+                  <p class="dilivery__text">Вы можете оплатить заказ наличными при самовывозе или при курьерской доставке. Курьер доставит вам товар по указанному адресу. Вы внимательно осматриваете комплектацию и внешний вид продукции, после чего оплачиваете ее стоимость.</p>
+                </div>
+                <div class="dilivery__col--2">
+                  <svg class="icon icon__credit-cards" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#credit-cards"></use>
+                  </svg><span class="dilivery__subtitle">Банковской картой</span>
+                  <p class="dilivery__text">Для удобной оплаты банковской картой используется система электронных платежей PayKeeper. При оформлении заказа выберите способ оплаты с помощью банковской карты, после чего вы перейдете на страницу безопасного платежа.</p>
+                </div>
+                <div class="dilivery__col--2">
+                  <svg class="icon icon__bank" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#bank"></use>
+                  </svg><span class="dilivery__subtitle">Банковский перевод</span>
+                  <p class="dilivery__text">Для осуществления платежа банковским переводом менеджер выставит счет с выбранными товарами и вышлет на вашу электронную почту. Данный способ оплаты по банковским реквизитам компании предусмотрен как для физических, так и для юридических лиц.</p>
+                </div>
+                <div class="dilivery__col--2">
+                  <svg class="icon icon__bitcoin" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#bitcoin"></use>
+                  </svg><span class="dilivery__subtitle">Оплата биткоинами</span>
+                  <p class="dilivery__text">На нашем сайте также доступна возможность оплаты биткоинами.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец секции delivery-->
+  </main>
+  <!-- Конец секции main-->
+  <!-- Начало секции promo-->
+  <div class="promo">
+    <div class="container">
+      <div class="promo__list">
+        <div class="promo__item promo__item--1">
+          <svg class="icon icon__wheel" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#wheel"></use>
+          </svg><span class="promo__name">Технологии SUNRAY</span><a class="promo__more" href="#">Подробнее</a>
+        </div>
+        <div class="promo__item promo__item--2">
+          <svg class="icon icon__list" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#list"></use>
+          </svg><span class="promo__name">Каталог обогревателей</span><a class="promo__more" href="#">Подробнее</a>
+        </div>
+        <div class="promo__item promo__item--3">
+          <svg class="icon icon__computer" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#computer"></use>
+          </svg><span class="promo__name">Сравнение видов отопления</span><a class="promo__more" href="#">Подробнее</a>
+        </div>
+        <div class="promo__item promo__item--4">
+          <svg class="icon icon__discount" role="img">
+            <use xlink:href="app/img/sprite/sprite.svg#discount"></use>
+          </svg><span class="promo__name">АКЦИИ!</span><a class="promo__more" href="#">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Конец секции promo-->
+  <!-- Начало секции footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__block"><span class="footer__title">Выбирайте и покупайте</span>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Конвекторы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Греющие панели</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Тёплый пол</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Терморегуляторы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Потолочные обогреватели</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Профессиональный монтаж</a></li>
+          </ul>
+        </div>
+        <div class="footer__block"><span class="footer__title">Ищите нас в соцсетях</span>
+          <div class="footer__social social"><a class="social__link" href="#">
+              <svg class="icon icon__vk" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#vk"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon icon__inst" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#inst"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon icon__youtube" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#youtube"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon icon__fb" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#fb"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon icon__od" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#od"></use>
+              </svg></a>
+          </div>
+          <div class="footer__subscribe subscribe">
+            <button class="subscribe__btn" type="button"><i class="fa fa-envelope"></i>Подписаться на акции</button>
+          </div>
+        </div>
+        <div class="footer__block"><span class="footer__title">Свяжитесь с нами</span>
+          <div class="footer__contacts"><a class="footer__contacts-link" href="#"><i class="fa fa-map-o"></i><span>Контакты</span></a><a class="footer__contacts-link" href="#"><i class="fa fa-comments"></i><span>Задать вопрос</span></a></div>
+        </div>
+        <div class="footer__block"><span class="footer__title">Информация</span>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">О Компании</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Производство</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Доставка</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Способы оплаты</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гарантия</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Стать дилером</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__middle"><span class="footer__offical">Официальный сайт производителя “SUNRAY”</span><img class="footer__card" src="app/img/card.png" alt="card"></div>
+      <div class="footer__bottom">
+        <div class="footer__logo"><img class="footer__img" src="app/img/logo.png" alt="logo"><span class="footer__descr">отопление будущего</span></div>
+        <div class="footer__privacy privacy"><a class="privacy__link" href="#">Политика конфиденциальности</a></div>
+        <p class="footer__law">©2014-2017.<br>MySunray.ru - интернет магазин обогревателей.<br>Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Конец секции footer-->
+</html>

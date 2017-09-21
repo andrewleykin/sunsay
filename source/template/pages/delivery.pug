@@ -1,0 +1,11 @@
+extends ../_template
+
+block variables
+  - var title = 'Доставка и оплата'
+  - var url_js = "app/js/app.js"
+  - var url_css = "app/css/app.css"
+
+block content
+  // Начало секции delivery
+  include ../section/_delivery
+  // Конец секции delivery
