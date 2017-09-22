@@ -3,11 +3,17 @@
 	@media (max-width: 960px) {
 		margin-bottom: 50px;
 	}
+	@media (max-width: 700px) {
+		margin-bottom: 40px;
+	}
 }
 
 .promo__list {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
 }
 
 .promo__item {
@@ -59,6 +65,22 @@
 			opacity: 0.75;
 		}
 	}
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5px;
+		flex-direction: row;
+		align-items: center;
+		color: white;
+		padding: 15px 20px;
+		&:before {
+			background: transparent;
+		}
+		.icon {
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+	}
 }
 
 .promo__name {
@@ -71,6 +93,9 @@
 	@extend .trs;
 	@media (max-width: 960px) {
 		font-size: 18px;
+	}
+	@media (max-width: 700px) {
+		margin-bottom: 0;
 	}
 }
 
@@ -106,24 +131,49 @@
 			margin-top: 5px;
 		}
 	}
+	@media (max-width: 700px) {
+		flex-direction: row;
+		margin-left: auto;
+		margin-top: 0;
+		font-size: 16px;
+		&:after {
+			width: 73px;
+			height: 10px;
+		}
+	}
+	@media (max-width: 480px) {
+		display: none;
+	}
 }
 
 // background
 .promo__item--1 {
 	background: url(../img/promo/promo-1.jpg) center center no-repeat;
 	background-size: cover;
+	@media (max-width: 700px) {
+		background: $bgColor;
+	}
 }
 .promo__item--2 {
 	background: url(../img/promo/promo-2.jpg) center center no-repeat;
 	background-size: cover;
+	@media (max-width: 700px) {
+		background: $bgColor;
+	}
 }
 .promo__item--3 {
 	background: url(../img/promo/promo-3.jpg) center center no-repeat;
 	background-size: cover;
+	@media (max-width: 700px) {
+		background: $bgColor;
+	}
 }
 .promo__item--4 {
 	background: url(../img/promo/promo-4.jpg) center center no-repeat;
 	background-size: cover;
+	@media (max-width: 700px) {
+		background: $bgColor;
+	}
 }
 
 .index-promo {
