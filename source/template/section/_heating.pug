@@ -1,0 +1,108 @@
+.heating
+	.heating__breadcrumbs
+		.container
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each val in ['Главная', 'Каталог отопления']
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#")= val
+	.heating__banner
+		.container
+			.heating__wrap
+				+icon('list')
+				h1.heating__title Каталог отопления
+	.delivery__content
+		.container
+			.heating__wrapper
+				.heating__menu
+					span.heating__subtitle Выбирайте и покупайте
+					ul.footer__list
+						each val in [ 'Конвекторы', 'ИК-панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
+							- if (val == "Терморегуляторы") {
+								li.footer__item.footer__item--active
+									a.footer__link(href="#")= val
+							- } else {
+								li.footer__item
+									a.footer__link(href="#")= val
+							- }
+				.heating__list
+					.heating__row
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__1.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S702
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 7600 руб.
+							.card-slider__bottom
+								a.card-slider__more(href="#") Подробнее
+									.card-slider__more--helper
+								a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__2.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S303
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — белое стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 5300 руб.
+							.card-slider__bottom
+								a.card-slider__more(href="#") Подробнее
+									.card-slider__more--helper
+								a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__3.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S702
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 7600 руб.
+								.card-slider__bottom
+									a.card-slider__more(href="#") Подробнее
+										.card-slider__more--helper
+									a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
+					.heating__row
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__1.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S702
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 7600 руб.
+							.card-slider__bottom
+								a.card-slider__more(href="#") Подробнее
+									.card-slider__more--helper
+								a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__2.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S303
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — белое стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 5300 руб.
+							.card-slider__bottom
+								a.card-slider__more(href="#") Подробнее
+									.card-slider__more--helper
+								a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
+						.card-slider__item
+							.card-slider__photo
+								img(src="app/img/card/card__also/card__3.jpg" alt="Фото товара")
+							.card-slider__wrap
+								span.card-slider__name КОНВЕКТОР S702
+								ul.card-slider__descr
+									each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
+										li.card-slider__descr-text= val
+								span.card-slider__cost Цена: 7600 руб.
+								.card-slider__bottom
+									a.card-slider__more(href="#") Подробнее
+										.card-slider__more--helper
+									a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
