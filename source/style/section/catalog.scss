@@ -20,6 +20,9 @@
 	flex-wrap: wrap;
 	height: 1080px;
 	align-items: space-between;
+	@media (max-width: 700px) {
+		height: auto;
+	}
 }
 
 .catalog__item {
@@ -65,6 +68,19 @@
 	@media (max-width: 960px) {
 		padding: 20px 30px;
 	}
+	@media (max-width: 700px) {
+		height: 200px;
+		width: 100%;
+		&:first-child {
+			height: 200px;
+		}
+		&:last-child {
+			height: 200px;
+		}
+	}
+	@media (max-width: 480px) {
+		padding: 10px 15px;
+	}
 }
 
 .catalog__name {
@@ -95,6 +111,9 @@
 		font-size: 14px;
 		line-height: 18px;
 	}
+	@media (max-width: 480px) {
+		font-size: 12px;
+	}
 }
 
 .catalog__more {
@@ -115,6 +134,9 @@
 		height: 10px;
 		background: url(../img/arrow-right.png) center center no-repeat;
 		background-size: cover;
+	}
+	@media (max-width: 480px) {
+		font-size: 16px;
 	}
 }
 

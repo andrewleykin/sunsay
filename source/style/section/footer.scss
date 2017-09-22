@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 75px;
+	@media(max-width: 700px) {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
 }
 
 .footer__block {
@@ -10,8 +14,17 @@
 	&:last-child {
 		margin-right: 0;
 	}
+	@media(max-width: 700px) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 }
-
+.footer__block-wrap {
+	@media(max-width: 700px) {
+		display: none;
+	}
+}
 .footer__title {
 	display: block;
 	font-size: 16px;
@@ -19,6 +32,36 @@
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	border-bottom: 2px dotted black;
+	@extend .trs;
+	&:after {
+		content: "";
+		display: none;
+		width: 18px;
+		height: 13px;
+		background: url(../img/arrow-right--small.png) center center no-repeat;
+		background-size: cover;
+		margin-left: 10px;
+		transform: rotate(-90deg);
+		@extend .trs;
+	}
+	@media(max-width: 700px) {
+		padding-bottom: 10px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		&:after {
+			display: block;
+		}
+		&:hover {
+			color: $accentColor;
+		}
+	}
+}
+
+.footer__title--active {
+	&:after {
+		transform: rotate(90deg);
+	}
 }
 
 .footer__list {
@@ -104,16 +147,33 @@
 	padding-bottom: 20px;
 	border-bottom: 1px solid black;
 	margin-bottom: 37px;
+	@media(max-width: 700px) {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 }
 
 .footer__offical {
 	opacity: 0.75;
+	@media(max-width: 700px) {
+		display: block;
+		margin-bottom: 15px;
+	}
 }
 
 .footer__bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media(max-width: 960px) {
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+	@media(max-width: 700px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 .footer__logo {
@@ -123,6 +183,9 @@
 		width: 155px;
 		margin-right: 12px;
 	}
+	@media(max-width: 700px) {
+		margin-bottom: 15px;
+	}
 }
 
 .footer__descr {
@@ -130,9 +193,25 @@
 	display: block;
 	line-height: 18px;
 }
-
+.footer__privacy {
+	@media(max-width: 960px) {
+		order: 1;
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+	}
+	@media(max-width: 700px) {
+		order: 0;
+		text-align: left;
+		margin-bottom: 15px;
+	}
+}
 .footer__law {
 	text-align: right;
 	font-size: 10px;
 	line-height: 18px;
+	@media(max-width: 700px) {
+		text-align: left;
+		font-size: 12px;
+	}
 }

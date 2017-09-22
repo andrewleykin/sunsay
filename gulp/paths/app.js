@@ -15,5 +15,6 @@ module.exports = [
   './source/js/common/card-tabs.js',
   './source/js/common/dilivery-tabs.js',
   './source/js/common/coop-tabs.js',
-  './source/js/common/menu.js'
+  './source/js/common/menu.js',
+  './source/js/common/footer.js'
 ];

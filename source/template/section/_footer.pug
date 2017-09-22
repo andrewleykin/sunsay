@@ -3,35 +3,39 @@ footer.footer
 		.footer__top
 			.footer__block
 				span.footer__title Выбирайте и покупайте
-				ul.footer__list
-					each val in [ 'Конвекторы', 'Греющие панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
-						li.footer__item
-							a.footer__link(href="#")= val
+				.footer__block-wrap
+					ul.footer__list
+						each val in [ 'Конвекторы', 'Греющие панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
+							li.footer__item
+								a.footer__link(href="#")= val
 			.footer__block
 				span.footer__title Ищите нас в соцсетях
-				.footer__social.social
-					each val in [ 'vk', 'inst', 'youtube', 'fb', 'od']
-						a.social__link(href="#")
-							+icon('' + val)
-				.footer__subscribe
-					button(type="button" data-remodal-target="subscribe")
-						i.fa.fa-envelope
-						| Подписаться на акции
+				.footer__block-wrap
+					.footer__social.social
+						each val in [ 'vk', 'inst', 'youtube', 'fb', 'od']
+							a.social__link(href="#")
+								+icon('' + val)
+					.footer__subscribe
+						button(type="button" data-remodal-target="subscribe")
+							i.fa.fa-envelope
+							| Подписаться на акции
 			.footer__block
 				span.footer__title Свяжитесь с нами
-				.footer__contacts
-					a.footer__contacts-link(href="#")
-						i.fa.fa-map-o
-						span Контакты
-					a.footer__contacts-link(href="#")
-						i.fa.fa-comments
-						span Задать вопрос
+				.footer__block-wrap
+					.footer__contacts
+						a.footer__contacts-link(href="#")
+							i.fa.fa-map-o
+							span Контакты
+						a.footer__contacts-link(href="#")
+							i.fa.fa-comments
+							span Задать вопрос
 			.footer__block
 				span.footer__title Информация
-				ul.footer__list
-					each val in [ 'О Компании', 'Производство', 'Доставка', 'Способы оплаты', 'Гарантия', 'Стать дилером']
-						li.footer__item
-							a.footer__link(href="#")= val
+				.footer__block-wrap
+					ul.footer__list
+						each val in [ 'О Компании', 'Производство', 'Доставка', 'Способы оплаты', 'Гарантия', 'Стать дилером']
+							li.footer__item
+								a.footer__link(href="#")= val
 		.footer__middle
 			span.footer__offical Официальный сайт производителя “SUNRAY”
 			img.footer__card(src="app/img/card.png" alt="card")
