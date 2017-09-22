@@ -10,12 +10,23 @@
 	padding-bottom: 30px;
 	margin-bottom: 50px;
 	@media (max-width: 960px) {
-		margin-bottom: 30px
+		margin-bottom: 30px;
+		flex-wrap: wrap;
 	}
 }
 
 .diagram__item {
 	width: calc(25% - 44px);
+	@media (max-width: 960px) {
+		width: calc(50% - 20px);
+		margin-bottom: 40px;
+	}
+	@media (max-width: 700px) {
+		width: 100%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .diagram__item--month {
@@ -32,6 +43,12 @@
 		font-family: $boldFont;
 		text-align: center;
 	}
+	@media (max-width: 960px) {
+		width: 70%;
+	}
+	@media (max-width: 700px) {
+		width: 100%;
+	}
 }
 
 .diagram__title {
@@ -41,7 +58,7 @@
 	line-height: 1.15;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	@media (max-width: 960px) {
+	@media (max-width: 1200px) {
 		font-size: 18px;
 		margin-bottom: 10px;
 	}

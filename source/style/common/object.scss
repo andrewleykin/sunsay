@@ -10,6 +10,9 @@
 	@media (max-width: 960px) {
 		padding: 20px 0;
 	}
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
 }
 
 .object__name {
@@ -20,12 +23,19 @@
 	@media (max-width: 960px) {
 		margin-left: 30px;
 	}
+	@media (max-width: 700px) {
+		margin: 15px 0;
+	}
 }
 
 .object__counter {
 	margin-right: 270px;
 	@media (max-width: 960px) {
-		margin-right: 200px;
+		margin-right: 150px;
+	}
+	@media (max-width: 700px) {
+		margin: 0;
+		margin-bottom: 15px;
 	}
 }
 
@@ -34,6 +44,9 @@
 	font-size: 16px;
 	@media (max-width: 960px) {
 		font-size: 14px;
+	}
+	@media (max-width: 700px) {
+		font-size: 16px;
 	}
 }
 
