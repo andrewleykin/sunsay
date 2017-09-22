@@ -36,3 +36,26 @@
 		font-size: 14px;
 	}
 }
+
+// basket-in
+
+.object__basket-in {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: 20px;
+	.object__basket-in-text {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 16px;
+		font-family: $mediumFont;
+		.fa {
+			color: $accentColor;
+			margin-right: 5px;
+		}
+	}
+	.object__name {
+		margin: 0;
+		text-align: left;
+	}
+}

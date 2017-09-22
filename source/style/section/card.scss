@@ -196,11 +196,8 @@
 	height: 48px;
 	font-size: 16px;
 	margin: 0;
-	.icon {
-		width: 19px;
-		height: 19px;
-		fill: white;
-		margin-right: 15px;
+	.fa {
+		margin-right: 5px;
 	}
 	@media (max-width: 960px) {
 		height: 40px;

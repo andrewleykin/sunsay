@@ -2,6 +2,16 @@
 	position: relative;
 	background: #262626;
 	padding: 20px 0;
+	@media (max-width: 980px) {
+		.container {
+			padding: 0 5px;
+		}
+	}
+	@media (max-width: 960px) {
+		.container {
+			padding: 0 10px;
+		}
+	}
 }
 
 .header__slider {

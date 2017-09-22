@@ -30,8 +30,8 @@
 					.card__basket-row
 						.card__counter
 							include ../common/_counter
-						.card__btn.link--fill
-							+icon('add-basket')
+						.card__btn.link--fill(data-remodal-target="basket-in")
+							i.fa.fa-cart-arrow-down
 							span.card__btn-text Добавить в корзину
 					.card__descr
 						ul.card__list

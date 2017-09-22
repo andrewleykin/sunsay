@@ -1,0 +1,69 @@
+.basket-in__block {
+	border-radius: 20px;
+	padding-bottom: 0;
+}
+
+.basket-in__object {
+	padding-top: 0;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+	.object__counter {
+		margin-right: 100px;
+	}
+}
+.basket-in__next {
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid black;
+	justify-content: space-between;
+}
+
+.basket-in__text {
+	font-size: 16px;
+	font-family: $mediumFont;
+	color: $accentColor;
+}
+
+.basket-in__text--black {
+	font-size: 16px;
+	font-family: $mediumFont;
+	margin-right: auto;
+	margin-left: 5px;
+}
+
+.basket-in__btn {
+	width: 240px;
+	height: 50px;
+	&.link {
+		color: black;
+		z-index: 1;
+		margin-right: 10px;
+		.link--helper {
+			z-index: -1;
+		}
+		&:hover {
+			color: white;
+		}
+	}
+	&.link--fill {
+		font-size: 16px;
+		padding: 0 25px;
+		margin: 0;
+		.fa {
+			margin-right: 5px;
+		}
+	}
+}
+
+.basket-in__more {
+	padding-top: 40px;
+	.card-slider {
+		margin-bottom: 20px;
+	}
+}
+
+.basket-in__slider-list {
+	display: flex;
+	
+}
