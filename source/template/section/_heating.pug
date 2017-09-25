@@ -17,7 +17,7 @@
 				.heating__menu
 					span.heating__subtitle Выбирайте и покупайте
 					ul.footer__list
-						each val in [ 'Конвекторы', 'ИК-панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
+						each val in [ 'Конвекторы', 'Греющие панели', 'Тёплый пол', 'Терморегуляторы', 'Потолочные обогреватели', 'Профессиональный монтаж']
 							- if (val == "Терморегуляторы") {
 								li.footer__item.footer__item--active
 									a.footer__link(href="#")= val
@@ -66,7 +66,6 @@
 								a.card-slider__more(href="#") Подробнее
 									.card-slider__more--helper
 								a.card-slider__basket(href="#" data-remodal-target="basket-in") В корзину
-					.heating__row
 						.card-slider__item
 							.card-slider__photo
 								img(src="app/img/card/card__also/card__1.jpg" alt="Фото товара")
