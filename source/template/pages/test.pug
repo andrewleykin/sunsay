@@ -1,9 +1,14 @@
-extends ../_template
+extends ../_main
 
 block variables
-  - var title = 'Каталог'
+  - var title = 'Тест'
   - var url_js = "app/js/app.js"
   - var url_css = "app/css/app.css"
 
 block content
-  include ../common/_basket-in
+  // Начало секции header
+  include ../section/_header
+  // Конец секции header
+  // Начало секции test
+  include ../section/_test
+  // Конец секции test

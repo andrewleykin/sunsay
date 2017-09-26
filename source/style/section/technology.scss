@@ -254,6 +254,10 @@
 }
 
 .cocoen {
+	height: 780px;
+	img {
+		height: 780px;
+	}
 	.cocoen-drag {
 		background: $accentColor;
 		width: 5px;
@@ -275,6 +279,30 @@
 			position: absolute;
 			top: 50%;
 			cursor: pointer;
+		}
+	}
+	@media (max-width: 1200px) {
+		height: 600px;
+		img {
+			height: 600px;
+		}
+	}
+	@media (max-width: 960px) {
+		height: 500px;
+		img {
+			height: 500px;
+		}
+	}
+	@media (max-width: 700px) {
+		height: 400px;
+		img {
+			height: 400px;
+		}
+	}
+	@media (max-width: 480px) {
+		height: 200px;
+		img {
+			height: 200px;
 		}
 	}
 }

@@ -1,0 +1,273 @@
+.test__list {
+	position: relative;
+	height: 1200px;
+}
+
+.test__item {
+	padding: 100px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	@extend .trs;
+}
+.test__item--active {
+	opacity: 1;
+	z-index: 1;
+}
+.test__title {
+	display: block;
+	font-size: 24px;
+	font-family: $boldFont;
+	line-height: 1.15;
+	text-align: center;
+	margin-bottom: 45px;
+}
+.test__title--mb {
+	margin-bottom: 80px;
+}
+
+.test__subtitle {
+	display: block;
+	font-size: 18px;
+	font-family: $mediumFont;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.test__subtitle--bold {
+	font-size: 21px;
+	font-family: $boldFont;
+}
+.test__controls {
+	display: flex;
+	justify-content: center;
+}
+.test {
+	.test__btn {
+		font-size: 16px;
+		height: 50px;
+		line-height: 44px;
+		padding: 0 20px;
+		cursor: pointer;
+		margin: 0;
+	}
+	.test__btn--next {
+		.fa {
+			margin-left: 5px;
+		}
+	}
+	.test__btn--prev {
+		color: black;
+		margin-right: 20px;
+		align-items: baseline;
+		.fa {
+			margin-right: 5px;
+		}
+		span {
+			position: relative;
+			z-index: 1;
+		}
+		&:hover {
+			color: white;
+		}
+	}
+	.test__btn--last {
+		.fa {
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+}
+
+.test__row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+.test__row--ai {
+	align-items: center;
+	position: relative;
+}
+.test__radio {
+	margin-right: 20px;
+	position: relative;
+	&:before,&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: #EBEBEB url(../img/checked.png) center center no-repeat;
+		background-size: 70%;
+		cursor: pointer;
+		@extend .trs;
+	}
+	&:after {
+		background: $accentColor url(../img/checked.png) center center no-repeat;
+		box-shadow: -2px 2px 8px -2px #ed0a63;
+		opacity: 0;
+	}
+}
+
+.test__label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	@media (max-width: 960px) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+}
+
+.test__radio~.test__label {
+	margin-right: 45px;
+	&:last-child {
+		margin-right: 0;
+	}
+	@media (max-width: 960px) {
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.test__radio:checked {
+	&:after {
+		opacity: 1;
+	}
+}
+
+.test__num {
+	font-size: 36px;
+	font-family: $blackFont;
+	color: $accentColor;
+	text-shadow: 0px 2px 10px $accentColor;
+}
+
+input[type="range"]{
+	-webkit-appearance: none;
+	border-radius:2px;
+	width:655px;
+	height:5px;
+	background-image:-webkit-linear-gradient(left ,$accentColor 0%,$accentColor 50%,#d7d7d7 50%, #d7d7d7 100%);
+	margin: 0 10px;
+	outline : none;
+	transition:.1s;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width:20px;
+	height:20px;
+	background:$accentColor;
+	border-radius:50%;
+	transition:.1s;
+	cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active{
+	width:24px;
+	height:24px;
+}
+
+.test__range-text {
+	font-size: 16px;
+	display: flex;
+}
+.test__range--sup {
+	font-size: 10px;
+}
+
+.now {
+	font-size: 16px;
+	font-family: $boldFont;
+	display: flex;
+	position: absolute;
+	bottom: -28px;
+	@include center('x');
+}
+
+.now-text {
+	display: flex;
+}
+
+.test__roll {
+	display: flex;
+	flex-direction: column;
+	height: 360px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.test__roll-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.test__checked-label {
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.test__city {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.test__input {
+	background: #ebebeb;
+	padding: 15px 20px;
+	width: 250px;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+.test__info {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.test__info-text {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 50px;
+	}
+}
+.test__info-num {
+	font-size: 60px;
+	font-family: $blackFont;
+	color: $accentColor;
+	text-shadow: 0px 2px 10px $accentColor;
+	display: block;
+	margin-bottom: 30px;
+}
+.test__subinfo {
+	font-size: 16px;
+}
+
+.test__block {
+	width: 166px;
+	text-align: center;
+	margin-right: 100px;
+	.icon {
+		width: 65px;
+		height: 65px;
+		margin-bottom: 30px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.test__order {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 55px;
+}

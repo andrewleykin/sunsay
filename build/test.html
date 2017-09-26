@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Тест</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="app/css/foundation.css">
@@ -11,302 +11,232 @@
     <script src="app/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body></body>
-  <!-- Начало секции header-->
-  <header class="header">
-    <div class="container">
-      <div class="header__top"><a class="header__logo" href="/"><img class="header__img" src="app/img/logo.png" alt="logo"></a>
-        <div class="header__nav">
-          <div class="header__btn"><span class="header__btn-text">Меню</span>
-            <div class="header__btn-humburger"><span></span></div>
-          </div>
-          <div class="header__list">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">Каталог обогревателей</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
-              </ul>
-            </nav>
-            <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
-            <div class="header__phone">
-              <div class="phone"><a class="phone__link" href="tel:+78007071850">8-800-707-18-50</a></div>
-              <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+  <body>
+    <!-- Начало секции header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top"><a class="header__logo" href="/"><img class="header__img" src="app/img/logo.png" alt="logo"></a>
+          <div class="header__nav">
+            <div class="header__btn"><span class="header__btn-text">Меню</span>
+              <div class="header__btn-humburger"><span></span></div>
+            </div>
+            <div class="header__list">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">Каталог обогревателей</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+                </ul>
+              </nav>
+              <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
+              <div class="header__phone">
+                <div class="phone"><a class="phone__link" href="tel:+78007071850">8-800-707-18-50</a></div>
+                <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="order-call">
-    <div class="remodal order-call__block" data-remodal-id="order-call">
-      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
-      <form class="order-call__form">
-        <div class="basket-form__row">
-          <div class="basket-form__block">
-            <label class="basket-form__label" for="name">Имя и Фамилия</label>
-            <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+    </header>
+    <div class="order-call">
+      <div class="remodal order-call__block" data-remodal-id="order-call">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+        <form class="order-call__form">
+          <div class="basket-form__row">
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="name">Имя и Фамилия</label>
+              <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+            </div>
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="phone">Номер телефона</label>
+              <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+            </div>
           </div>
-          <div class="basket-form__block">
-            <label class="basket-form__label" for="phone">Номер телефона</label>
-            <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
-          </div>
-        </div>
-        <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
-      </form>
+          <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+        </form>
+      </div>
+      <div class="remodal order-call__block" data-remodal-id="thanks-order">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+        <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
+      </div>
     </div>
-    <div class="remodal order-call__block" data-remodal-id="thanks-order">
-      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
-      <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
-    </div>
-  </div>
-  <!-- Конец секции header-->
-  <!-- Начало секции main-->
-  <main class="main">
-    <div class="basket-in">
-      <div class="remodal basket-in__block" data-remodal-id="basket-in">
-        <button class="remodal-close close-link" data-remodal-action="close"></button>
-        <div class="basket-in__object object"><img class="object__photo" src="app/img/basket/basket__1.jpg" Фото товара>
-          <div class="object__basket-in"><span class="object__basket-in-text">Текст добавлен в <i class="fa fa-shopping-cart"></i>корзину</span><span class="object__name">КОНВЕКТОР S702</span></div>
-          <div class="object__counter">
-            <div class="counter">
-              <div class="counter__btn dec">-
-                <div class="counter__btn--helper"></div>
-              </div>
-              <input class="counter__input" type="text" value="1" data-min="1" data-max="100">
-              <div class="counter__btn inc">+
-                <div class="counter__btn--helper"></div>
+    <!-- Конец секции header-->
+    <!-- Начало секции test-->
+    <div class="test">
+      <div class="container">
+        <div class="test__display">
+          <div class="test__list">
+            <div class="test__item test__item--active"><span class="test__title test__title--mb">Пройдите тест за 1 минуту и узнайте стоимость обогревателей<br>и их расход электричества в месяц</span><span class="test__subtitle">1. Для каких помещений необходимы обогреватели:</span>
+              <div class="test__row">
+                <input class="test__radio" type="radio" id="point1--1" name="point1" checked>
+                <label class="test__label" for="point1--1">Дом</label>
+                <input class="test__radio" type="radio" id="point1--2" name="point1">
+                <label class="test__label" for="point1--2">Квартира</label>
+                <input class="test__radio" type="radio" id="point1--3" name="point1">
+                <label class="test__label" for="point1--3">Офис</label>
+                <input class="test__radio" type="radio" id="point1--4" name="point1">
+                <label class="test__label" for="point1--4">Промышленные помещения</label>
+                <input class="test__radio" type="radio" id="point1--5" name="point1">
+                <label class="test__label" for="point1--5">Другие помещения</label>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">200 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
               </div>
             </div>
-          </div><span class="object__sum">7600 руб.</span>
-        </div>
-        <div class="basket-in__next"><span class="basket-in__text">В корзине 1 товар </span><span class="basket-in__text--black">на сумму 7600 руб.</span><a class="basket-in__btn link" href="#">Продолжить покупки
-            <div class="link--helper"></div></a><a class="basket-in__btn link--fill" href="#"> <i class="fa fa-cart-arrow-down"></i>Перейти в корзину</a></div>
-        <div class="basket-in__more">
-          <div class="card-slider">
-            <div class="container"><span class="card-slider__title">Вам также может понадобиться</span>
-              <div class="basket-in__slider-list">
-                <div class="card-slider__item">
-                  <div class="card-slider__photo"><img src="app/img/card/card__also/card__1.jpg" alt="Фото товара"></div>
-                  <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S702</span>
-                    <ul class="card-slider__descr">
-                      <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                      <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                      <li class="card-slider__descr-text">Корпус — белый металл</li>
-                      <li class="card-slider__descr-text">Панель — черное стекло</li>
-                    </ul><span class="card-slider__cost">Цена: 7600 руб.</span>
+            <div class="test__item"><span class="test__subtitle">2. Высота потолков:</span>
+              <div class="test__row">
+                <input class="test__radio" type="radio" id="point2--1" name="point2" checked>
+                <label class="test__label" for="point2--1">до 2 м</label>
+                <input class="test__radio" type="radio" id="point2--2" name="point2">
+                <label class="test__label" for="point2--2">от 2 м до 2,5 м</label>
+                <input class="test__radio" type="radio" id="point2--3" name="point2">
+                <label class="test__label" for="point2--3">от 2,5 м до 3 м</label>
+                <input class="test__radio" type="radio" id="point2--4" name="point2">
+                <label class="test__label" for="point2--4">от 3 м и выше</label>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">3. Какая общая площадь помещений, которые необходимо обогреть:</span>
+              <div class="test__row test__row--ai">
+                <div class="test__range-text">10м<span class="test__range--sup">2</span></div>
+                <input class="test__range" type="range" id="range" name="range" min="10" max="350">
+                <div class="test__range-text">350м<span class="test__range--sup">2</span></div>
+                <div class="test__range-now now"><span class="now-num">180 </span><span class="now-text">м<span class="test__range--sup">2</span></span></div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">4. Выберите понравившиеся варианты внешнего вида:</span>
+              <div class="test__roll">
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--1" name="point3" checked>
+                  <label class="test__checked-label" for="point3--1"><img class="test__img" src="app/img/test/test__1.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--2" name="point3">
+                  <label class="test__checked-label" for="point3--2"><img class="test__img" src="app/img/test/test__2.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--3" name="point3">
+                  <label class="test__checked-label" for="point3--3"><img class="test__img" src="app/img/test/test__3.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--4" name="point3">
+                  <label class="test__checked-label" for="point3--4"><img class="test__img" src="app/img/test/test__4.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--5" name="point3">
+                  <label class="test__checked-label" for="point3--5"><img class="test__img" src="app/img/test/test__5.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--6" name="point3">
+                  <label class="test__checked-label" for="point3--6"><img class="test__img" src="app/img/test/test__6.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--7" name="point3">
+                  <label class="test__checked-label" for="point3--7"><img class="test__img" src="app/img/test/test__7.jpg" alt="Фото обогревателя"></label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--8" name="point3">
+                  <label class="test__checked-label" for="point3--8"><img class="test__img" src="app/img/test/test__8.jpg" alt="Фото обогревателя"></label>
+                </div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">4. Выберите понравившиеся варианты внешнего вида:</span>
+              <div class="test__city">
+                <label class="test__text-label" for="city">Ваш город</label>
+                <input class="test__input" type="text" name="city" id="city" placeholder="Махачкала">
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">6. Желаемые сроки приобретения обогревателей:</span>
+              <div class="test__row">
+                <input class="test__radio" type="radio" id="point4--1" name="point4" checked>
+                <label class="test__label" for="point4--1">В ближайшее время</label>
+                <input class="test__radio" type="radio" id="point4--2" name="point4">
+                <label class="test__label" for="point4--2">В течение 2 недель</label>
+                <input class="test__radio" type="radio" id="point4--3" name="point4">
+                <label class="test__label" for="point4--3">В течение месяца</label>
+                <input class="test__radio" type="radio" id="point4--4" name="point4">
+                <label class="test__label" for="point4--4">К концу осени 2017</label>
+                <input class="test__radio" type="radio" id="point4--5" name="point4">
+                <label class="test__label" for="point4--5">Другое</label>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__title">Благодарим за ответы!</span>
+              <div class="test__info"><span class="test__info-text">Ваша скидка</span><span class="test__info-num">1200p.</span><span class="test__info-text">действует в течение 10 дней!*</span><span class="test__subinfo">*действительна только для тех клиентов, которые оставили заявку в форме ниже</span></div><span class="test__title">Получите</span>
+              <div class="test__row">
+                <div class="test__block">
+                  <svg class="icon icon__price-tag" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#price-tag"></use>
+                  </svg><span class="test__subtitle">Стоимость обогревателей для Вас</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__invoice" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#invoice"></use>
+                  </svg><span class="test__subtitle">Расчёт расходов на электричество в месяц</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__shapes" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#shapes"></use>
+                  </svg><span class="test__subtitle">Каталог обогревателей и галерею фотографий</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__gift" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#gift"></use>
+                  </svg><span class="test__subtitle test__subtitle--bold">Подарок</span>
+                </div>
+              </div>
+              <div class="test__order">
+                <div class="basket-form__row">
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="name">Имя и Фамилия</label>
+                    <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
                   </div>
-                  <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                      <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
-                </div>
-                <div class="card-slider__item">
-                  <div class="card-slider__photo"><img src="app/img/card/card__also/card__2.jpg" alt="Фото товара"></div>
-                  <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S303</span>
-                    <ul class="card-slider__descr">
-                      <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                      <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                      <li class="card-slider__descr-text">Корпус — белый металл</li>
-                      <li class="card-slider__descr-text">Панель — белое стекло</li>
-                    </ul><span class="card-slider__cost">Цена: 5300 руб.</span>
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="phone">Номер телефона</label>
+                    <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
                   </div>
-                  <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                      <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
-                </div>
-                <div class="card-slider__item">
-                  <div class="card-slider__photo"><img src="app/img/card/card__also/card__3.jpg" alt="Фото товара"></div>
-                  <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S702</span>
-                    <ul class="card-slider__descr">
-                      <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                      <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                      <li class="card-slider__descr-text">Корпус — белый металл</li>
-                      <li class="card-slider__descr-text">Панель — черное стекло</li>
-                    </ul><span class="card-slider__cost">Цена: 7600 руб.</span>
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="mail">Электронная почта</label>
+                    <input class="basket-form__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
                   </div>
-                  <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                      <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
                 </div>
+              </div>
+              <div class="test__controls">
+                <div class="test__btn link--fill test__btn--last"><i class="fa fa-calculator"></i>Получить расчёт</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
-  <!-- Конец секции main-->
-  <!-- Начало секции promo-->
-  <div class="promo">
-    <div class="container">
-      <div class="promo__list">
-        <div class="promo__item promo__item--1">
-          <svg class="icon icon__wheel" role="img">
-            <use xlink:href="app/img/sprite/sprite.svg#wheel"></use>
-          </svg><span class="promo__name">Технологии SUNRAY</span><a class="promo__more" href="#">Подробнее</a>
-        </div>
-        <div class="promo__item promo__item--2">
-          <svg class="icon icon__list" role="img">
-            <use xlink:href="app/img/sprite/sprite.svg#list"></use>
-          </svg><span class="promo__name">Каталог обогревателей</span><a class="promo__more" href="#">Подробнее</a>
-        </div>
-        <div class="promo__item promo__item--3">
-          <svg class="icon icon__computer" role="img">
-            <use xlink:href="app/img/sprite/sprite.svg#computer"></use>
-          </svg><span class="promo__name">Сравнение видов отопления</span><a class="promo__more" href="#">Подробнее</a>
-        </div>
-        <div class="promo__item promo__item--4">
-          <svg class="icon icon__discount" role="img">
-            <use xlink:href="app/img/sprite/sprite.svg#discount"></use>
-          </svg><span class="promo__name">АКЦИИ!</span><a class="promo__more" href="#">Подробнее</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Конец секции promo-->
-  <!-- Начало секции footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__block"><span class="footer__title">Выбирайте и покупайте</span>
-          <div class="footer__block-wrap">
-            <ul class="footer__list">
-              <li class="footer__item"><a class="footer__link" href="#">Конвекторы</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Греющие панели</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Тёплый пол</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Терморегуляторы</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Потолочные обогреватели</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Профессиональный монтаж</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__block"><span class="footer__title">Ищите нас в соцсетях</span>
-          <div class="footer__block-wrap">
-            <div class="footer__social social"><a class="social__link" href="#">
-                <svg class="icon icon__vk" role="img">
-                  <use xlink:href="app/img/sprite/sprite.svg#vk"></use>
-                </svg></a><a class="social__link" href="#">
-                <svg class="icon icon__inst" role="img">
-                  <use xlink:href="app/img/sprite/sprite.svg#inst"></use>
-                </svg></a><a class="social__link" href="#">
-                <svg class="icon icon__youtube" role="img">
-                  <use xlink:href="app/img/sprite/sprite.svg#youtube"></use>
-                </svg></a><a class="social__link" href="#">
-                <svg class="icon icon__fb" role="img">
-                  <use xlink:href="app/img/sprite/sprite.svg#fb"></use>
-                </svg></a><a class="social__link" href="#">
-                <svg class="icon icon__od" role="img">
-                  <use xlink:href="app/img/sprite/sprite.svg#od"></use>
-                </svg></a>
-            </div>
-            <div class="footer__subscribe">
-              <button type="button" data-remodal-target="subscribe"><i class="fa fa-envelope"></i>Подписаться на акции</button>
-            </div>
-          </div>
-        </div>
-        <div class="footer__block"><span class="footer__title">Свяжитесь с нами</span>
-          <div class="footer__block-wrap">
-            <div class="footer__contacts"><a class="footer__contacts-link" href="#"><i class="fa fa-map-o"></i><span>Контакты</span></a><a class="footer__contacts-link" href="#"><i class="fa fa-comments"></i><span>Задать вопрос</span></a></div>
-          </div>
-        </div>
-        <div class="footer__block"><span class="footer__title">Информация</span>
-          <div class="footer__block-wrap">
-            <ul class="footer__list">
-              <li class="footer__item"><a class="footer__link" href="#">О Компании</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Производство</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Доставка</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Способы оплаты</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Гарантия</a></li>
-              <li class="footer__item"><a class="footer__link" href="#">Стать дилером</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer__middle"><span class="footer__offical">Официальный сайт производителя “SUNRAY”</span><img class="footer__card" src="app/img/card.png" alt="card"></div>
-      <div class="footer__bottom"><a class="footer__logo" href="/"><img class="footer__img" src="app/img/logo.png" alt="logo"><span class="footer__descr">отопление будущего</span></a>
-        <div class="footer__privacy privacy"><a class="privacy__link" href="#">Политика конфиденциальности</a></div>
-        <p class="footer__law">©2014-2017.<br>MySunray.ru - интернет магазин обогревателей.<br>Все права защищены.</p>
-      </div>
-    </div>
-  </footer>
-  <div class="subscribe">
-    <div class="remodal subscribe__block" data-remodal-id="subscribe">
-      <button class="remodal-close close-link" data-remodal-action="close"></button>
-      <div class="subscribe__banner"><span class="subscribe__subtitle">подпишитесь на новости</span>
-        <p class="subscribe__title">и получите доступ к эксклюзивным предложениям и закрытым акциям!</p><span class="subscribe__title--big">+ <br>бонус</span><span class="subscribe__descr">*на первую покупку</span>
-        <div class="subscribe__ball"><span>Скидка</span><span class="subscribe__ball-text">1000</span><span>рублей*</span></div>
-      </div>
-      <div class="subscribe__email">
-        <label class="subscribe__label" for="mail"> Введите Ваш e-mail</label>
-        <input class="subscribe__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
-        <input class="subscribe__submit link--fill" type="submit" name="submit" id="submit">
-      </div>
-    </div>
-  </div>
-  <div class="basket-in">
-    <div class="remodal basket-in__block" data-remodal-id="basket-in">
-      <button class="remodal-close close-link" data-remodal-action="close"></button>
-      <div class="basket-in__object object"><img class="object__photo" src="app/img/basket/basket__1.jpg" Фото товара>
-        <div class="object__basket-in"><span class="object__basket-in-text">Текст добавлен в <i class="fa fa-shopping-cart"></i>корзину</span><span class="object__name">КОНВЕКТОР S702</span></div>
-        <div class="object__counter">
-          <div class="counter">
-            <div class="counter__btn dec">-
-              <div class="counter__btn--helper"></div>
-            </div>
-            <input class="counter__input" type="text" value="1" data-min="1" data-max="100">
-            <div class="counter__btn inc">+
-              <div class="counter__btn--helper"></div>
-            </div>
-          </div>
-        </div><span class="object__sum">7600 руб.</span>
-      </div>
-      <div class="basket-in__next"><span class="basket-in__text">В корзине 1 товар </span><span class="basket-in__text--black">на сумму 7600 руб.</span><a class="basket-in__btn link" href="#">Продолжить покупки
-          <div class="link--helper"></div></a><a class="basket-in__btn link--fill" href="#"> <i class="fa fa-cart-arrow-down"></i>Перейти в корзину</a></div>
-      <div class="basket-in__more">
-        <div class="card-slider">
-          <div class="container"><span class="card-slider__title">Вам также может понадобиться</span>
-            <div class="basket-in__slider-list">
-              <div class="card-slider__item">
-                <div class="card-slider__photo"><img src="app/img/card/card__also/card__1.jpg" alt="Фото товара"></div>
-                <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S702</span>
-                  <ul class="card-slider__descr">
-                    <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                    <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                    <li class="card-slider__descr-text">Корпус — белый металл</li>
-                    <li class="card-slider__descr-text">Панель — черное стекло</li>
-                  </ul><span class="card-slider__cost">Цена: 7600 руб.</span>
-                </div>
-                <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                    <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
-              </div>
-              <div class="card-slider__item">
-                <div class="card-slider__photo"><img src="app/img/card/card__also/card__2.jpg" alt="Фото товара"></div>
-                <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S303</span>
-                  <ul class="card-slider__descr">
-                    <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                    <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                    <li class="card-slider__descr-text">Корпус — белый металл</li>
-                    <li class="card-slider__descr-text">Панель — белое стекло</li>
-                  </ul><span class="card-slider__cost">Цена: 5300 руб.</span>
-                </div>
-                <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                    <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
-              </div>
-              <div class="card-slider__item">
-                <div class="card-slider__photo"><img src="app/img/card/card__also/card__3.jpg" alt="Фото товара"></div>
-                <div class="card-slider__wrap"><span class="card-slider__name">КОНВЕКТОР S702</span>
-                  <ul class="card-slider__descr">
-                    <li class="card-slider__descr-text">Мощность — 700 watt</li>
-                    <li class="card-slider__descr-text">Отапливаемая S — 15 м2</li>
-                    <li class="card-slider__descr-text">Корпус — белый металл</li>
-                    <li class="card-slider__descr-text">Панель — черное стекло</li>
-                  </ul><span class="card-slider__cost">Цена: 7600 руб.</span>
-                </div>
-                <div class="card-slider__bottom"><a class="card-slider__more" href="#">Подробнее
-                    <div class="card-slider__more--helper"></div></a><a class="card-slider__basket" href="#" data-remodal-target="basket-in">В корзину</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Конец секции footer-->
+    <!-- Конец секции test-->
+  </body>
 </html>

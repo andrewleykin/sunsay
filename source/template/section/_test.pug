@@ -1,0 +1,188 @@
+.test
+	.container
+		.test__display
+			.test__list
+				.test__item.test__item--active
+					span.test__title.test__title--mb Пройдите тест за 1 минуту и узнайте стоимость обогревателей
+						br 
+						| и их расход электричества в месяц
+					span.test__subtitle 1. Для каких помещений необходимы обогреватели:
+					.test__row
+						input.test__radio(type="radio" id="point1--1" name="point1" checked)
+						label.test__label(for="point1--1") Дом
+						input.test__radio(type="radio" id="point1--2" name="point1")
+						label.test__label(for="point1--2") Квартира
+						input.test__radio(type="radio" id="point1--3" name="point1")
+						label.test__label(for="point1--3") Офис
+						input.test__radio(type="radio" id="point1--4" name="point1")
+						label.test__label(for="point1--4") Промышленные помещения
+						input.test__radio(type="radio" id="point1--5" name="point1")
+						label.test__label(for="point1--5") Другие помещения
+					span.test__title Текущий бонус : 
+						span.test__num 200 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__subtitle 2. Высота потолков:
+					.test__row
+						input.test__radio(type="radio" id="point2--1" name="point2" checked)
+						label.test__label(for="point2--1") до 2 м
+						input.test__radio(type="radio" id="point2--2" name="point2")
+						label.test__label(for="point2--2") от 2 м до 2,5 м
+						input.test__radio(type="radio" id="point2--3" name="point2")
+						label.test__label(for="point2--3") от 2,5 м до 3 м
+						input.test__radio(type="radio" id="point2--4" name="point2")
+						label.test__label(for="point2--4") от 3 м и выше
+					span.test__title Текущий бонус : 
+						span.test__num 400 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--prev.link
+							.link--helper
+							i.fa.fa-arrow-left
+							span Предыдущий вопрос
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__subtitle 3. Какая общая площадь помещений, которые необходимо обогреть:
+					.test__row.test__row--ai
+						.test__range-text 10м
+							span.test__range--sup 2
+						input.test__range(type="range" id="range" name="range" min="10" max="350")
+						.test__range-text 350м
+							span.test__range--sup 2
+						.test__range-now.now
+							span.now-num 180 
+							span.now-text м
+								span.test__range--sup 2
+					span.test__title Текущий бонус : 
+						span.test__num 400 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--prev.link
+							.link--helper
+							i.fa.fa-arrow-left
+							span Предыдущий вопрос
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__subtitle 4. Выберите понравившиеся варианты внешнего вида:
+					.test__roll
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--1" name="point3" checked)
+							label.test__checked-label(for="point3--1")
+								img.test__img(src="app/img/test/test__1.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--2" name="point3")
+							label.test__checked-label(for="point3--2")
+								img.test__img(src="app/img/test/test__2.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--3" name="point3")
+							label.test__checked-label(for="point3--3")
+								img.test__img(src="app/img/test/test__3.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--4" name="point3")
+							label.test__checked-label(for="point3--4")
+								img.test__img(src="app/img/test/test__4.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--5" name="point3")
+							label.test__checked-label(for="point3--5")
+								img.test__img(src="app/img/test/test__5.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--6" name="point3")
+							label.test__checked-label(for="point3--6")
+								img.test__img(src="app/img/test/test__6.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--7" name="point3")
+							label.test__checked-label(for="point3--7")
+								img.test__img(src="app/img/test/test__7.jpg" alt="Фото обогревателя")
+						.test__roll-item
+							input.test__radio(type="checkbox" id="point3--8" name="point3")
+							label.test__checked-label(for="point3--8")
+								img.test__img(src="app/img/test/test__8.jpg" alt="Фото обогревателя")
+					span.test__title Текущий бонус : 
+						span.test__num 400 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--prev.link
+							.link--helper
+							i.fa.fa-arrow-left
+							span Предыдущий вопрос
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__subtitle 4. Выберите понравившиеся варианты внешнего вида:
+					.test__city
+						label.test__text-label(for="city") Ваш город
+						input.test__input(type="text" name="city" id="city" placeholder="Махачкала")
+					span.test__title Текущий бонус : 
+						span.test__num 400 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--prev.link
+							.link--helper
+							i.fa.fa-arrow-left
+							span Предыдущий вопрос
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__subtitle 6. Желаемые сроки приобретения обогревателей:
+					.test__row
+						input.test__radio(type="radio" id="point4--1" name="point4" checked)
+						label.test__label(for="point4--1") В ближайшее время
+						input.test__radio(type="radio" id="point4--2" name="point4")
+						label.test__label(for="point4--2") В течение 2 недель
+						input.test__radio(type="radio" id="point4--3" name="point4")
+						label.test__label(for="point4--3") В течение месяца
+						input.test__radio(type="radio" id="point4--4" name="point4")
+						label.test__label(for="point4--4") К концу осени 2017
+						input.test__radio(type="radio" id="point4--5" name="point4")
+						label.test__label(for="point4--5") Другое
+					span.test__title Текущий бонус : 
+						span.test__num 400 
+						| руб.
+					.test__controls
+						.test__btn.test__btn--prev.link
+							.link--helper
+							i.fa.fa-arrow-left
+							span Предыдущий вопрос
+						.test__btn.test__btn--next.link--fill Следующий вопрос
+							i.fa.fa-arrow-right
+				.test__item
+					span.test__title Благодарим за ответы!
+					.test__info
+						span.test__info-text Ваша скидка
+						span.test__info-num 1200p.
+						span.test__info-text действует в течение 10 дней!*
+						span.test__subinfo *действительна только для тех клиентов, которые оставили заявку в форме ниже
+					span.test__title Получите
+					.test__row
+						.test__block
+							+icon('price-tag')
+							span.test__subtitle Стоимость обогревателей для Вас
+						.test__block
+							+icon('invoice')
+							span.test__subtitle Расчёт расходов на электричество в месяц
+						.test__block
+							+icon('shapes')
+							span.test__subtitle Каталог обогревателей и галерею фотографий
+						.test__block
+							+icon('gift')
+							span.test__subtitle.test__subtitle--bold Подарок
+					.test__order
+						.basket-form__row
+							.basket-form__block
+								label.basket-form__label(for="name") Имя и Фамилия
+								input.basket-form__input(type="text" name="name" id="name" placeholder="Иван Иванов")
+							.basket-form__block
+								label.basket-form__label(for="phone") Номер телефона
+								input.basket-form__input(type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__")
+							.basket-form__block
+								label.basket-form__label(for="mail") Электронная почта
+								input.basket-form__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
+					.test__controls
+						.test__btn.link--fill.test__btn--last
+							i.fa.fa-calculator
+							| Получить расчёт
