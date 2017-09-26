@@ -8,16 +8,21 @@
 						| и их расход электричества в месяц
 					span.test__subtitle 1. Для каких помещений необходимы обогреватели:
 					.test__row
-						input.test__radio(type="radio" id="point1--1" name="point1" checked)
-						label.test__label(for="point1--1") Дом
-						input.test__radio(type="radio" id="point1--2" name="point1")
-						label.test__label(for="point1--2") Квартира
-						input.test__radio(type="radio" id="point1--3" name="point1")
-						label.test__label(for="point1--3") Офис
-						input.test__radio(type="radio" id="point1--4" name="point1")
-						label.test__label(for="point1--4") Промышленные помещения
-						input.test__radio(type="radio" id="point1--5" name="point1")
-						label.test__label(for="point1--5") Другие помещения
+						.test__row-block
+							input.test__radio(type="radio" id="point1--1" name="point1" checked)
+							label.test__label(for="point1--1") Дом
+						.test__row-block
+							input.test__radio(type="radio" id="point1--2" name="point1")
+							label.test__label(for="point1--2") Квартира
+						.test__row-block
+							input.test__radio(type="radio" id="point1--3" name="point1")
+							label.test__label(for="point1--3") Офис
+						.test__row-block
+							input.test__radio(type="radio" id="point1--4" name="point1")
+							label.test__label(for="point1--4") Промышленные помещения
+						.test__row-block
+							input.test__radio(type="radio" id="point1--5" name="point1")
+							label.test__label(for="point1--5") Другие помещения
 					span.test__title Текущий бонус : 
 						span.test__num 200 
 						| руб.
@@ -27,14 +32,18 @@
 				.test__item
 					span.test__subtitle 2. Высота потолков:
 					.test__row
-						input.test__radio(type="radio" id="point2--1" name="point2" checked)
-						label.test__label(for="point2--1") до 2 м
-						input.test__radio(type="radio" id="point2--2" name="point2")
-						label.test__label(for="point2--2") от 2 м до 2,5 м
-						input.test__radio(type="radio" id="point2--3" name="point2")
-						label.test__label(for="point2--3") от 2,5 м до 3 м
-						input.test__radio(type="radio" id="point2--4" name="point2")
-						label.test__label(for="point2--4") от 3 м и выше
+						.test__row-block
+							input.test__radio(type="radio" id="point2--1" name="point2" checked)
+							label.test__label(for="point2--1") до 2 м
+						.test__row-block
+							input.test__radio(type="radio" id="point2--2" name="point2")
+							label.test__label(for="point2--2") от 2 м до 2,5 м
+						.test__row-block
+							input.test__radio(type="radio" id="point2--3" name="point2")
+							label.test__label(for="point2--3") от 2,5 м до 3 м
+						.test__row-block
+							input.test__radio(type="radio" id="point2--4" name="point2")
+							label.test__label(for="point2--4") от 3 м и выше
 					span.test__title Текущий бонус : 
 						span.test__num 400 
 						| руб.
@@ -130,16 +139,21 @@
 				.test__item
 					span.test__subtitle 6. Желаемые сроки приобретения обогревателей:
 					.test__row
-						input.test__radio(type="radio" id="point4--1" name="point4" checked)
-						label.test__label(for="point4--1") В ближайшее время
-						input.test__radio(type="radio" id="point4--2" name="point4")
-						label.test__label(for="point4--2") В течение 2 недель
-						input.test__radio(type="radio" id="point4--3" name="point4")
-						label.test__label(for="point4--3") В течение месяца
-						input.test__radio(type="radio" id="point4--4" name="point4")
-						label.test__label(for="point4--4") К концу осени 2017
-						input.test__radio(type="radio" id="point4--5" name="point4")
-						label.test__label(for="point4--5") Другое
+						.test__row-block
+							input.test__radio(type="radio" id="point4--1" name="point4" checked)
+							label.test__label(for="point4--1") В ближайшее время
+						.test__row-block
+							input.test__radio(type="radio" id="point4--2" name="point4")
+							label.test__label(for="point4--2") В течение 2 недель
+						.test__row-block
+							input.test__radio(type="radio" id="point4--3" name="point4")
+							label.test__label(for="point4--3") В течение месяца
+						.test__row-block
+							input.test__radio(type="radio" id="point4--4" name="point4")
+							label.test__label(for="point4--4") К концу осени 2017
+						.test__row-block
+							input.test__radio(type="radio" id="point4--5" name="point4")
+							label.test__label(for="point4--5") Другое
 					span.test__title Текущий бонус : 
 						span.test__num 400 
 						| руб.
@@ -158,7 +172,7 @@
 						span.test__info-text действует в течение 10 дней!*
 						span.test__subinfo *действительна только для тех клиентов, которые оставили заявку в форме ниже
 					span.test__title Получите
-					.test__row
+					.test__row.test__row--last
 						.test__block
 							+icon('price-tag')
 							span.test__subtitle Стоимость обогревателей для Вас

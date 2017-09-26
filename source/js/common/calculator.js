@@ -70,13 +70,13 @@
 					var rangeValue = r.val(),
 						countVal;
 
-					if(rangeValue < 50) {
+					if(rangeValue <= 50) {
 						countVal = 200;
-					} else if (rangeValue > 50 && rangeValue < 70) {
+					} else if (rangeValue > 50 && rangeValue <= 70) {
 						countVal = 500;
-					} else if (rangeValue > 70 && rangeValue < 100) {
+					} else if (rangeValue > 70 && rangeValue <= 100) {
 						countVal = 1000;
-					} else if (rangeValue > 100 && rangeValue < 150) {
+					} else if (rangeValue > 100 && rangeValue <= 150) {
 						countVal = 2000;
 					} else if (rangeValue > 150) {
 						countVal = 3000;
