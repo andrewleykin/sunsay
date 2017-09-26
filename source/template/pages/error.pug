@@ -1,0 +1,11 @@
+extends ../_template
+
+block variables
+  - var title = 'Ошибка'
+  - var url_js = "app/js/app.js"
+  - var url_css = "app/css/app.css"
+
+block content
+  // Начало секции error
+  include ../section/_error
+  // Конец секции error
