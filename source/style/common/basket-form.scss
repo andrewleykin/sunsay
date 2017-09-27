@@ -47,11 +47,18 @@
 		}
 	}
 }
-
+.basket-form__row--radio {
+	.basket-form__block {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 15px;
+	}
+}
 .basket-form__label {
 	display: block;
 	font-size: 16px;
 	margin-bottom: 15px;
+	cursor: pointer;
 	@media (max-width: 960px) {
 		font-size: 14px;
 		margin-bottom: 10px;
@@ -72,8 +79,9 @@
 	}
 }
 .basket-form__radio {
-	margin-right: 10px;
+	margin-right: 15px;
 	position: relative;
+	cursor: pointer;
 	&:before,&:after {
 		content: "";
 		display: block;
@@ -84,16 +92,13 @@
 		height: 20px;
 		background: #EBEBEB url(../img/checked.png) center center no-repeat;
 		background-size: 70%;
+		cursor: pointer;
 		@extend .trs;
 	}
 	&:after {
 		background: $accentColor url(../img/checked.png) center center no-repeat;
 		box-shadow: -2px 2px 8px -2px #ed0a63;
 		opacity: 0;
-	}
-	@media (max-width: 700px) {
-		margin-right: 0;
-		margin-bottom: 20px;
 	}
 }
 .basket-form__radio~.basket-form__label {

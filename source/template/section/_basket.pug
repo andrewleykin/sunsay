@@ -42,11 +42,13 @@
 								label.basket-form__label(for="mail") Электронная почта
 								input.basket-form__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
 						span.basket__title.basket-form__tile--min Способ доставки
-						.basket-form__row
-							input.basket-form__radio(type="radio" id="radio1" name="radio" checked)
-							label.basket-form__label(for="radio1") Курьером
-							input.basket-form__radio(type="radio" id="radio2" name="radio")
-							label.basket-form__label(for="radio2") Самовывоз
+						.basket-form__row.basket-form__row--radio
+							.basket-form__block
+								input.basket-form__radio(type="radio" id="radio1" name="radio" checked)
+								label.basket-form__label(for="radio1") Курьером
+							.basket-form__block
+								input.basket-form__radio(type="radio" id="radio2" name="radio")
+								label.basket-form__label(for="radio2") Самовывоз
 						.basket-form__row
 							.basket-form__block
 								label.basket-form__label(for="country") Страна
@@ -58,13 +60,16 @@
 								label.basket-form__label(for="addres") Адрес
 								input.basket-form__input(type="text" name="addres" id="addres" placeholder="Красная Площадь, 1")
 						span.basket__title.basket-form__tile--min Способ оплаты
-						.basket-form__row
-							input.basket-form__radio(type="radio" id="radio3" name="radio2" checked)
-							label.basket-form__label(for="radio3") Банковской картой
-							input.basket-form__radio(type="radio" id="radio4" name="radio2")
-							label.basket-form__label(for="radio4") Наличными
-							input.basket-form__radio(type="radio" id="radio5" name="radio2")
-							label.basket-form__label(for="radio5") Банковским переводом
+						.basket-form__row.basket-form__row--radio
+							.basket-form__block
+								input.basket-form__radio(type="radio" id="radio3" name="radio2" checked)
+								label.basket-form__label(for="radio3") Банковской картой
+							.basket-form__block
+								input.basket-form__radio(type="radio" id="radio4" name="radio2")
+								label.basket-form__label(for="radio4") Наличными
+							.basket-form__block
+								input.basket-form__radio(type="radio" id="radio5" name="radio2")
+								label.basket-form__label(for="radio5") Банковским переводом
 			.basket__row.basket__row--hidden
 				.basket__total
 					span.basket__title Итого: 16700 рублей
