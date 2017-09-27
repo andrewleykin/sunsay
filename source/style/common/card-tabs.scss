@@ -11,6 +11,9 @@
 	@media (max-width: 960px) {
 		margin-bottom: 20px;
 	}
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
 }
 .card-tabs__control {
 	padding: 15px 25px;
@@ -30,6 +33,13 @@
 		font-size: 14px;
 		padding: 10px 20px;
 	}
+	@media (max-width: 700px) {
+		margin-right: 0;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .card-tabs__control--active {
@@ -41,6 +51,9 @@
 	position: relative;
 	height: 580px;
 	border-bottom: 1px solid black;
+	@media (max-width: 480px) {
+		height: 750px;
+	}
 }
 .card-tabs__item {
 	position: absolute;
@@ -76,6 +89,9 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+	@media (max-width: 480px) {
+		flex-direction: column;
+	}
 }
 
 .card-tabs__subrow {
@@ -84,6 +100,10 @@
 	margin-right: 15px;
 	@media (max-width: 960px) {
 		width: 300px;
+	}
+	@media (max-width: 480px) {
+		flex-direction: column;
+		width: 100%;
 	}
 }
 
@@ -96,4 +116,11 @@
 .card-tabs__dots {
 	width: 100%;
 	background: url(../img/card/dots.png) center bottom repeat-x;
+	@media (max-width: 480px) {
+		height: 8px;
+	}
+}
+
+.card-tabs__name, .card-tabs__info {
+	font-size: 14px;
 }

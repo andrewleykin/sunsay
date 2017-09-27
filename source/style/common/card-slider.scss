@@ -51,6 +51,22 @@
 			}
 		}
 	}
+	@media (max-width: 1200px) {
+		.slick-arrow {
+			&.slick-prev {
+				left: 0;
+			}
+			&.slick-next {
+				right: 0;
+			}
+		}
+	}
+	@media (max-width: 960px) {
+		width: 95%;
+	}
+	@media (max-width: 480px) {
+		width: 100%;
+	}
 }
 .card-slider__item {
 	width: 260px;
