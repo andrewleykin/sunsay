@@ -7,7 +7,22 @@
 		arrows: true,
 		fade: true,
 		asNavFor: '.card__more',
-	});
+	}) .magnificPopup({
+      type: 'image',
+      delegate: 'a:not(.slick-cloned)',
+      gallery: {
+        enabled: true
+      },
+      callbacks: {
+        open: function() {
+          var current = $('.card__display').slick('slickCurrentSlide');
+          $('.card__display').magnificPopup('goTo', current);
+        },
+        beforeClose: function() {
+          $('.card__display').slick('slickGoTo', parseInt(this.index));
+        }
+      }
+		});
 
 	$('.card__more').slick({
 		slidesToShow: 5,

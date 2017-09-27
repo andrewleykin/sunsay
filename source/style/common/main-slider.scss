@@ -394,7 +394,7 @@ span.main-slider__ball-text {
 	display: block;
 	position: relative;
 	width: 50px;
-	height: 4px;
+	height: 3px;
 	background: rgba(255,255,255,.25);
 	margin-right: 20px;
 	cursor: pointer;
@@ -406,7 +406,9 @@ span.main-slider__ball-text {
 		background: rgba(255,255,255,.5);
 	}
 }
-
+.main-slider__dot--active {
+	background: rgba(255,255,255,.5);
+}
 .main-slider__dot--animate {
 	overflow: hidden;
 	&:before {

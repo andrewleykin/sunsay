@@ -165,6 +165,11 @@
 .day__title {
 	line-height: 1.15;
 }
+.day__text {
+	@media(max-width: 700px) {
+		width: 50%;
+	}
+}
 .technology__comfort {
 	text-align: center;
 	margin-bottom: 180px;
@@ -397,6 +402,20 @@
 	text-align: center;
 	@extend .trs;
 	transition-duration: .5s;
+	@media(max-width: 700px) {
+		&:first-child {
+			img {
+				width: 50%;
+			}
+		}
+	}
+	@media(max-width: 480px) {
+		&:first-child {
+			img {
+				width: 70%;
+			}
+		}
+	}
 }
 
 .tech-slider__item--active {

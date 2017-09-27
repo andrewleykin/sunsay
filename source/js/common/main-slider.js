@@ -9,10 +9,9 @@
 		next = $('.main-slider__control--next'),
 		duration = 2400,
 		dotAnimate = 'main-slider__dot--animate',
+		dotActive = 'main-slider__dot--active',
 		animateDot = dot.filter('.' + dotAnimate),
 		index = 0;
-
-		console.log(items);
 
 	var mainSlider = setInterval(function(){
 		var activeDot = dot.filter('.' + dotAnimate),
@@ -26,14 +25,15 @@
 		if (index >= items.length) {
 			index = 0;
 			items.eq(index).addClass(itemsActive);
+			dot.eq(index).addClass(dotActive);
 			clear();
 		}
 
 		move(index);
 
-		activeDot.removeClass(dotAnimate);
+		activeDot.removeClass(dotAnimate).removeClass(dotActive);
 		activeItems.removeClass(itemsActive);
-		reqDot.addClass(dotAnimate);
+		reqDot.addClass(dotAnimate).addClass(dotActive);
 		reqItem.addClass(itemsActive);
 	},duration);
 
@@ -48,41 +48,85 @@
 
 	dot.click(function() {
 		clear();
-		animateDot.removeClass(dotAnimate);
+		animateDot.removeClass(dotAnimate).removeClass(dotActive);
 		var index = $(this).index(),
-			activeItems = items.filter('.' + itemsActive);
+			activeItems = items.filter('.' + itemsActive),
+			activeDot = dot.filter('.' + dotActive);
 		move(index);
 		activeItems.removeClass(itemsActive);
+		activeDot.removeClass(dotActive);
 		items.eq(index).addClass(itemsActive);
+		dot.eq(index).addClass(dotActive);
 	});
 
 	prev.click(function() {
 		clear();
-		var activeItems = items.filter('.' + itemsActive);
+		var activeItems = items.filter('.' + itemsActive),
+			activeDot = dot.filter('.' + dotActive);
 		var index = items.filter('.' + itemsActive).index();
-		animateDot.removeClass(dotAnimate);
-		console.log(index);
+		animateDot.removeClass(dotAnimate).removeClass(dotActive);
 		index--;
 		if(index < 0) {
 			index = items.length - 1;
 		}
 		move(index);
 		activeItems.removeClass(itemsActive);
+		activeDot.removeClass(dotActive);
 		items.eq(index).addClass(itemsActive);
+		dot.eq(index).addClass(dotActive);
 	});
 
 	next.click(function() {
 		clear();
-		var activeItems = items.filter('.' + itemsActive);
+		var activeItems = items.filter('.' + itemsActive),
+			activeDot = dot.filter('.' + dotActive);
 		var index = items.filter('.' + itemsActive).index();
-		animateDot.removeClass(dotAnimate);
-		console.log(index);
+		animateDot.removeClass(dotAnimate).removeClass(dotActive);
 		index++;
 		if(index >= items.length) {
 			index = 0;
 		}
 		move(index);
 		activeItems.removeClass(itemsActive);
+		activeDot.removeClass(dotActive);
 		items.eq(index).addClass(itemsActive);
+		dot.eq(index).addClass(dotActive);
 	});
+
+	list.swipe( {
+		swipeLeft:leftSwipe,
+		swipeRight:rightSwipe,
+	});
+	function leftSwipe(event){
+		clear();
+		var activeItems = items.filter('.' + itemsActive),
+			activeDot = dot.filter('.' + dotActive);
+		var index = items.filter('.' + itemsActive).index();
+		animateDot.removeClass(dotAnimate).removeClass(dotActive);
+		index++;
+		if(index >= items.length) {
+			index = 0;
+		}
+		move(index);
+		activeItems.removeClass(itemsActive);
+		activeDot.removeClass(dotActive);
+		items.eq(index).addClass(itemsActive);
+		dot.eq(index).addClass(dotActive);
+	}
+	function rightSwipe(event){
+		clear();
+		var activeItems = items.filter('.' + itemsActive),
+			activeDot = dot.filter('.' + dotActive);
+		var index = items.filter('.' + itemsActive).index();
+		animateDot.removeClass(dotAnimate).removeClass(dotActive);
+		index--;
+		if(index < 0) {
+			index = items.length - 1;
+		}
+		move(index);
+		activeItems.removeClass(itemsActive);
+		activeDot.removeClass(dotActive);
+		items.eq(index).addClass(itemsActive);
+		dot.eq(index).addClass(dotActive);
+	}
 })();

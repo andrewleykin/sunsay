@@ -8,5 +8,8 @@ module.exports = [
   './node_modules/cocoen/dist/js/cocoen-jquery.min.js',
   './node_modules/wowjs/dist/wow.min.js',
   './node_modules/slick-carousel/slick/slick.min.js',
-  './source/js/libs/maskedInput.js'
+  './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+  './node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
+  './source/js/libs/maskedInput.js',
+  './source/js/libs/hummer.min.js'
 ];
