@@ -1,0 +1,39 @@
+.payments__block {
+	text-align: left;
+}
+
+.payments__title {
+	font-size: 18px;
+	font-family: $boldFont;
+	display: block;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.payments__title--first {
+	margin-bottom: 40px;
+}
+
+.payments__text {
+	font-size: 14px;
+	line-height: 30px;
+	font-family: $lightFont;
+	margin-bottom: 35px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.card-delivery__list {
+	margin-bottom: 40px;
+}
+.card-delivery__item {
+	@extend .payments__title;
+	display: flex;
+	&:before {
+		content: "•";
+		display: block;
+		font-size: 14px;
+		color: $accentColor;
+		margin-right: 10px;
+	}
+}

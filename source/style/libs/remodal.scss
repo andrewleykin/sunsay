@@ -2,6 +2,16 @@
 	max-width: 960px;
 }
 
+.remodal[data-remodal-id="payments"] {
+	max-width: 900px;
+	border-radius: 10px;
+}
+
+.remodal[data-remodal-id="card-delivery"] {
+	max-width: 900px;
+	border-radius: 10px;
+}
+
 .remodal[data-remodal-id="subscribe"] {
 	padding: 0;
 	width: fit-content;

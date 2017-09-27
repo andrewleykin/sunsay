@@ -33,10 +33,19 @@
 						.card__btn.link--fill(data-remodal-target="basket-in")
 							i.fa.fa-cart-arrow-down
 							span.card__btn-text Добавить в корзину
+					.card__paydel
+						.card__payments(data-remodal-target="payments")
+							+icon('credit-cards')
+							span Оплата
+						.card__delivery(data-remodal-target="card-delivery")
+							+icon('delivery')
+							span Доставка
 					.card__descr
 						ul.card__list
 							each val in ['Мощность — 700 watt','Отапливаемая S — 15 м2','Корпус — белый металл','Панель — черное стекло']
 								li.card__item= val
+					.card__banks
+						img(src="app/img/card.png" alt="Способы оплаты")
 	.card__shot
 		.container
 			.card__shot-wrap
