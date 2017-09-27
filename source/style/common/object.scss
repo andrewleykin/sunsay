@@ -71,4 +71,11 @@
 		margin: 0;
 		text-align: left;
 	}
+	@media(max-width: 960px) {
+		flex-wrap: wrap;
+	}
+	@media(max-width: 700px) {
+		margin: 10px 0;
+		align-items: center;
+	}
 }

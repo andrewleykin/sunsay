@@ -8,10 +8,17 @@
 	display: block;
 	line-height: 30px;
 	margin-bottom: 10px;
+	@media(max-width:700px) {
+		font-size: 14px;
+		text-align: center;
+	}
 }
 
 .payments__title--first {
 	margin-bottom: 40px;
+	@media(max-width:700px) {
+		margin-bottom: 20px;
+	}
 }
 
 .payments__text {
@@ -22,9 +29,16 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+	@media(max-width:700px) {
+		margin-bottom: 15px;
+		text-align: justify;
+	}
 }
 .card-delivery__list {
 	margin-bottom: 40px;
+	@media(max-width:700px) {
+		margin-bottom: 30px;
+	}
 }
 .card-delivery__item {
 	@extend .payments__title;
@@ -35,5 +49,8 @@
 		font-size: 14px;
 		color: $accentColor;
 		margin-right: 10px;
+	}
+	@media(max-width:700px) {
+		text-align: left;
 	}
 }

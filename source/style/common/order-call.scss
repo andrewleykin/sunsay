@@ -21,6 +21,11 @@
 	.basket-form__input {
 		width: 100%;
 	}
+	@media(max-width: 700px) {
+		.basket-form__block {
+			width: 100%;
+		}
+	}
 }
 .order-call__text {
 	font-size: 18px;
@@ -43,6 +48,7 @@
 	width: 45px;
 	height: 45px;
 	@extend .trs;
+	z-index: 999;
 	&:before {
 		width: 45px;
 		font-size: 85px;
@@ -50,5 +56,16 @@
 	&:hover {
 		color: $accentColor;
 		text-shadow: 0px 2px 10px $accentColor;
+	}
+	@media(max-width: 1100px) {
+		left: unset;
+		right: 10px;
+		top: 10px;
+		width: 25px;
+		height: 25px;
+		&:before {
+			width: 25px;
+			font-size: 50px;
+		}
 	}
 }

@@ -17,6 +17,9 @@
 	font-family: $boldFont;
 	margin-bottom: 15px;
 	text-transform: uppercase;
+	@media(max-width: 960px) {
+		font-size: 14px;
+	}
 }
 
 .subscribe__title {
@@ -25,6 +28,9 @@
 	font-family: $boldFont;
 	line-height: 1.15;
 	margin-bottom: 55px;
+	@media(max-width: 960px) {
+		font-size: 20px;
+	}
 }
 
 .subscribe__title--big {
@@ -32,6 +38,9 @@
 	text-transform: uppercase;
 	font-family: $boldFont;
 	margin-bottom: 15px;
+	@media(max-width: 960px) {
+		font-size: 36px;
+	}
 }
 
 .subscribe__descr {
@@ -57,11 +66,25 @@
 	span {
 		font-size: 16px;
 	}
+	@media(max-width: 960px) {
+		left: 60%;
+	}
+	@media(max-width: 480px) {
+		width: 100px;
+		height: 100px;
+		padding: 15px 0;
+		span {
+			font-size: 14px;
+		}
+	}
 }
 
 span.subscribe__ball-text {
 	font-size: 36px;
 	font-family: $blackFont;
+	@media(max-width: 480px) {
+		font-size: 28px;
+	}
 }
 
 .subscribe__email {
@@ -70,6 +93,9 @@ span.subscribe__ball-text {
 	flex-direction: column;
 	text-align: center;
 	position: relative;
+	@media(max-width: 700px) {
+		padding: 20px 50px 50px;
+	}
 }
 
 .subscribe__label {
@@ -87,7 +113,7 @@ span.subscribe__ball-text {
 	background: #EBEBEB;
 	border-radius: 10px;
 	padding: 20px;
-	@media (max-width: 960px) {
+	@media (max-width: 700px) {
 		padding: 10px 20px;
 		font-size: 14px;
 	}

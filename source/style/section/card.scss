@@ -108,6 +108,14 @@
 			}
 		}
 	}
+	@media (max-width: 700px) {
+		.card__img {
+			height: 350px;
+			img {
+				height: 350px;
+			}
+		}
+	}
 	@media (max-width: 480px) {
 		.card__img {
 			height: 250px;

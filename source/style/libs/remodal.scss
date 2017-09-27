@@ -18,6 +18,9 @@
 	border-radius: 20px;
 	width: 760px;
 	text-align: left;
+	@media(max-width:960px) {
+		width: 100%;
+	}
 }
 
 .remodal[data-remodal-id="cardZoom1"] {
