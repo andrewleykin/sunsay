@@ -6,28 +6,13 @@
 		slidesToScroll: 1,
 		arrows: true,
 		fade: true,
-		asNavFor: '.card__more',
-	}) .magnificPopup({
-      type: 'image',
-      delegate: 'a:not(.slick-cloned)',
-      gallery: {
-        enabled: true
-      },
-      callbacks: {
-        open: function() {
-          var current = $('.card__display').slick('slickCurrentSlide');
-          $('.card__display').magnificPopup('goTo', current);
-        },
-        beforeClose: function() {
-          $('.card__display').slick('slickGoTo', parseInt(this.index));
-        }
-      }
-		});
+		asNavFor: '.card__more, .card-zoom__list',
+	});
 
 	$('.card__more').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		asNavFor: '.card__display',
+		asNavFor: '.card__display, .card-zoom__list',
 		focusOnSelect: true,
 		responsive: [
 			{
@@ -64,5 +49,4 @@
 			}
 		]
 	});
-
 })();

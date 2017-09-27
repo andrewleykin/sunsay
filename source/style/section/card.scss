@@ -58,7 +58,44 @@
 		height: 80px;
 	}
 }
-
+.card-zoom__list {
+	position: relative;
+	.slick-arrow {
+		position: absolute;
+		@include center('y');
+		@extend .trs;
+		z-index: 1;
+		font-size: 0;
+		background: none;
+		&:after {
+			content:"";
+			display: block;
+			width: 25px;
+			height: 45px;
+			background: url(../img/arrow-right--small.png) no-repeat center center;
+			background-size: cover;
+			cursor: pointer;
+		}
+		&.slick-prev {
+			left: 10px;
+			&:hover {
+				top: 48%;
+				transform: scale(1.2);
+			}
+		}
+		&.slick-next {
+			right: 10px;
+			top: 45%;
+			transform: rotate(180deg);
+			&:hover {
+				transform: scale(1.2) rotate(180deg);
+			}
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
 .card__display,{
 	position: relative;
 	margin-bottom: 15px;
