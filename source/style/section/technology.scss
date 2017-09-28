@@ -27,6 +27,9 @@
 		padding: 70px 0;
 		margin-bottom: 30px;
 	}
+	@media (max-width: 480px) {
+		background-position: 45% center;
+	}
 }
 
 .technology__wrap {
@@ -159,7 +162,7 @@
 		}
 	}
 	@media (max-width: 700px) {
-		width: 100%;
+		width: 70%;
 	}
 }
 .day__title {

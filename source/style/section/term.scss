@@ -11,6 +11,9 @@
 		height: 700px;
 		background-position: 78% top;
 	}
+	@media (max-width: 480px) {
+		padding-top: 50px;
+	}
 }
 
 .term__title {
@@ -23,6 +26,9 @@
 	@media (max-width: 960px) {
 		font-size: 90px;
 		margin-bottom: 40px;
+	}
+	@media (max-width: 480px) {
+		margin-bottom: 15px;
 	}
 }
 
@@ -37,6 +43,9 @@
 	}
 	@media (max-width: 700px) {
 		color: white;
+	}
+	@media (max-width: 480px) {
+		margin-bottom: 15px;
 	}
 }
 
