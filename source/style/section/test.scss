@@ -181,6 +181,7 @@
 		height: 20px;
 		background: #EBEBEB url(../img/checked.png) center center no-repeat;
 		background-size: 70%;
+		cursor: pointer;
 		@extend .trs;
 	}
 	&:after {
