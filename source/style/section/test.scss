@@ -292,24 +292,62 @@ input[type="range"]::-webkit-slider-thumb:active{
 
 .test__roll {
 	display: flex;
-	flex-direction: column;
-	height: 360px;
 	align-items: center;
 	flex-wrap: wrap;
-	@media (max-width: 480px) {
-		height: auto;
-	}
+	justify-content: space-between;
 }
 
 .test__roll-item {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	justify-content: space-between;
+	width: calc(50% - 20px);
+	@media (max-width:960px) {
+		width: 100%;
+		justify-content: center;
+	}
 }
 
 .test__checked-label {
 	border-radius: 5px;
 	cursor: pointer;
+	img {
+		margin-bottom: 10px;
+		height: 400px;
+	}
+	p {
+		text-align: center;
+		font-size: 12px;
+	}
+	span {
+		text-align: center;
+		display: block;
+		font-size: 16px;
+		font-family: $boldFont;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	@media (max-width:1200px) {
+		img {
+			height: 300px;
+		}
+	}
+	@media (max-width:960px) {
+		img {
+			height: 400px;
+		}
+	}
+	@media (max-width:700px) {
+		img {
+			height: 300px;
+		}
+	}
+	@media (max-width:480px) {
+		img {
+			height: 150px;
+		}
+	}
 }
 
 .test__city {
