@@ -13,6 +13,7 @@
 					.card__display
 						each val in [1,2,3,4,5,6,7,8,9,10]
 							.card__img
+								+icon('zoom')
 								img.card__img--zoom(src="app/img/card/card__more/card__"+val+".jpg" alt="фото товара" data-remodal-target="cardZoom" + val)
 					.card__more
 						each val in [1,2,3,4,5,6,7,8,9,10]
