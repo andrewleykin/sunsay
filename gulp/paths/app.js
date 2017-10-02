@@ -19,5 +19,6 @@ module.exports = [
   './source/js/common/footer.js',
   './source/js/common/heating-menu.js',
   './source/js/common/calculator.js',
-  './source/js/common/swipe.js'
+  './source/js/common/swipe.js',
+  './source/js/common/check.js'
 ];

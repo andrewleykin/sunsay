@@ -11,5 +11,5 @@ module.exports = [
   './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
   './node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
   './source/js/libs/maskedInput.js',
-  './source/js/libs/hummer.min.js'
+  './source/js/libs/hummer.min.js',
 ];

@@ -1,0 +1,14 @@
+.order-mail.order-call
+	.remodal.order-mail__block.order-call__block(data-remodal-id="order-mail")
+		button.remodal-close.close-link(data-remodal-action="close")
+		span.order-mail__title.order-call__title Напишите нам
+		form.order-mail__form.order-call__form
+			.basket-form__row
+				.basket-form__block
+					label.basket-form__label(for="name") Имя и Фамилия
+					input.basket-form__input(type="text" name="name" id="name" placeholder="Иван Иванов")
+				.basket-form__block
+					label.basket-form__label(for="email") Ваша почта
+					input.basket-form__input(type="text" name="email" id="email" placeholder="ivanov@mail.ru")
+			include _check
+			input.order-mail__submit.order-call__submit.js-check(type="submit" name="submit" id="submit" data-remodal-target="thanks-order")

@@ -52,7 +52,11 @@
             <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
           </div>
         </div>
-        <input class="order-call__submit" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+        <div class="check" id="#check">
+          <input class="check__input" type="checkbox" name="check" id="check" required>
+          <label class="check__label" for="check">Нажимая на кнопку «Отправить», я даю <span class="check__link" data-remodal-target="politic">согласие на обработку персональных данных</span></label>
+        </div>
+        <input class="order-call__submit js-check" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
       </form>
     </div>
     <div class="remodal order-call__block" data-remodal-id="thanks-order">
@@ -275,7 +279,7 @@
       </div>
       <div class="footer__middle"><span class="footer__offical">Официальный сайт производителя “SUNRAY”</span><img class="footer__card" src="app/img/card.png" alt="card"></div>
       <div class="footer__bottom"><a class="footer__logo" href="/"><img class="footer__img" src="app/img/logo.png" alt="logo"><span class="footer__descr">отопление будущего</span></a>
-        <div class="footer__privacy privacy"><a class="privacy__link" href="#">Политика конфиденциальности</a></div>
+        <div class="footer__privacy privacy"><a class="privacy__link" href="#" data-remodal-target="politic">Политика конфиденциальности</a></div>
         <p class="footer__law">©2014-2017.<br>MySunray.ru - интернет магазин обогревателей.<br>Все права защищены.</p>
       </div>
     </div>
@@ -290,7 +294,11 @@
       <div class="subscribe__email">
         <label class="subscribe__label" for="mail"> Введите Ваш e-mail</label>
         <input class="subscribe__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
-        <input class="subscribe__submit link--fill" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+        <div class="check" id="#check">
+          <input class="check__input" type="checkbox" name="check" id="check" required>
+          <label class="check__label" for="check">Нажимая на кнопку «Отправить», я даю <span class="check__link" data-remodal-target="politic">согласие на обработку персональных данных</span></label>
+        </div>
+        <input class="subscribe__submit link--fill js-check" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
       </div>
     </div>
   </div>
@@ -360,6 +368,16 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="politic">
+    <div class="remodal politic__block" data-remodal-id="politic">
+      <button class="remodal-close close-link" data-remodal-action="close"></button><span class="politic__title">УСЛОВИЯ И СПОСОБЫ ОБРАБОТКИ И ХРАНЕНИЯ ПЕРСОНАЛЬНЫХ ДАННЫХ.</span>
+      <p class="politic__text">Защита и целостность Ваших персональных данных очень важны для нас. По этой причине мы будем использовать Вашу информацию исключительно в соответствии с применимым законодательством.</p>
+      <p class="politic__text">Мы собираем, обрабатываем и используем персональные данные, которые Вы предоставляете нам, исключительно с целью возможности оказания информационной поддержки.</p>
+      <p class="politic__text">Предоставляя Ваши персональные данные компании ООО"Санрэй" для обработки (включая систематизацию; накопление; хранение; уточнение - обновление, изменение; использование; передачу (в том числе распространение, предоставление, доступ), обезличивание; блокирование; уничтожение; сбор; запись; накопление; извлечение; использование; удаление, а также автоматизированные и иные способы обработки), Вы выражаете согласие с тем, что указанная информация будет использоваться компанией ООО "Санрэй".</p>
+      <p class="politic__text">Предоставляя Ваши персональные данные в соответствии с целями и условиями выше, Вы подтверждаете свое согласие на трансграничную передачу и распространение Ваших персональных данных и выражаете Ваше предварительное согласие на обработку персональных данных в целях, предусмотренных выше, в том числе для продвижения и совершенствования товаров и услуг ООО "Санрэй", путем прямых контактов с помощью средств связи. </p>
+      <p class="politic__text">Ваше согласие дается на неопределенный срок.</p>
     </div>
   </div>
   <!-- Конец секции footer-->

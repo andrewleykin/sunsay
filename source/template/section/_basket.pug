@@ -73,6 +73,7 @@
 							.basket-form__block
 								input.basket-form__radio(type="radio" id="radio6" name="radio2")
 								label.basket-form__label(for="radio6") Оплата биткоинами
+					include ../common/_check
 			.basket__row.basket__row--hidden
 				.basket__total
 					span.basket__title Итого: 16700 рублей
@@ -81,4 +82,4 @@
 					a.link.basket__btn(href="#") Связаться с менеджером
 						.link--helper
 					span.basket__manager-text *для уточнения деталей заказа
-				a.link--fill.basket__btn(href="#") Перейти к оплате
+				a.link--fill.basket__btn.js-check(href="#") Перейти к оплате

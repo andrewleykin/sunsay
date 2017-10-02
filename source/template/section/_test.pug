@@ -194,8 +194,10 @@
 							.basket-form__block
 								label.basket-form__label(for="mail") Электронная почта
 								input.basket-form__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
+					.test__check
+						include ../common/_check
 					.test__controls
-						.test__btn.link--fill.test__btn--last
+						.test__btn.link--fill.test__btn--last.js-check
 							i.fa.fa-calculator
 							| Получить расчёт
 					span.test__title Получите
@@ -212,4 +214,3 @@
 						.test__block
 							+icon('gift')
 							span.test__subtitle.test__subtitle--bold Подарок
-					

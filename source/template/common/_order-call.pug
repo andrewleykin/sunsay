@@ -10,7 +10,8 @@
 				.basket-form__block
 					label.basket-form__label(for="phone") Номер телефона
 					input.basket-form__input(type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__")
-			input.order-call__submit(type="submit" name="submit" id="submit" data-remodal-target="thanks-order")
+			include _check
+			input.order-call__submit.js-check(type="submit" name="submit" id="submit" data-remodal-target="thanks-order")
 	.remodal.order-call__block(data-remodal-id="thanks-order")
 		button.remodal-close.close-link(data-remodal-action="close")
 		span.order-call__title Спасибо!

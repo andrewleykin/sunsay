@@ -1,0 +1,43 @@
+.check {
+	margin: 20px 0;
+}
+
+.check__input {
+	margin-right: 20px;
+	position: relative;
+	&:before,&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: #EBEBEB url(../img/checked.png) center center no-repeat;
+		background-size: 70%;
+		cursor: pointer;
+		@extend .trs;
+	}
+	&:after {
+		background: $accentColor url(../img/checked.png) center center no-repeat;
+		box-shadow: -2px 2px 8px -2px #ed0a63;
+		opacity: 0;
+	}
+}
+
+.check__input:checked {
+	&:after {
+		opacity: 1;
+	}
+}
+.check__label {
+	cursor: pointer;
+}
+.check__link {
+	color: $accentColor;
+	@extend .trs;
+	cursor: pointer;
+	&:hover {
+		color: black;
+	}
+}

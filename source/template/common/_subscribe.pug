@@ -15,4 +15,5 @@
 		.subscribe__email
 			label.subscribe__label(for="mail")  Введите Ваш e-mail
 			input.subscribe__input(type="text" name="mail" id="mail" placeholder="ivanov@mail.ru")
-			input.subscribe__submit.link--fill(type="submit" name="submit" id="submit" data-remodal-target="thanks-order")
+			include ../common/_check.pug
+			input.subscribe__submit.link--fill.js-check(type="submit" name="submit" id="submit" data-remodal-target="thanks-order")
